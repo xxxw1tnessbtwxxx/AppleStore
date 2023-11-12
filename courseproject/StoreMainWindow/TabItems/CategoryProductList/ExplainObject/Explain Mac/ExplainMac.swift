@@ -22,7 +22,6 @@ class ExplainMac: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         macImage.image = UIImage(named: get!.image)
         macName.text = get!.title
         cpu.text = "CPU: \(get!.specs.cpu)"
@@ -37,6 +36,7 @@ class ExplainMac: UIViewController {
         }
         
     }
+    
     
     func configure(with item: MacModelAPI) { self.get = item }
     

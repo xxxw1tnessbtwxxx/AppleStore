@@ -6,3 +6,16 @@
 //
 
 import Foundation
+import UIKit
+
+class ExplainiPad: UIViewController {
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+    
+    func configure(with item: AnyObject) {
+        
+    }
+    
+}

@@ -17,17 +17,17 @@ class Router {
         vc.setCategory(category: category)
         fromvc.navigationController?.pushViewController(vc, animated: true)
     }
-    
+    /// Function that pushed Mac info
     func pushProductInfo(from fromvc: UIViewController, product: MacModelAPI) {
-        let story = UIStoryboard(name: "ExplainMac", bundle: nil)
-        let vc = story.instantiateViewController(withIdentifier: "ExplainMac") as! ExplainMac
+        let vc = UIStoryboard(name: "ExplainMac", bundle: nil).instantiateViewController(withIdentifier: "ExplainMac") as! ExplainMac
         vc.configure(with: product)
         fromvc.present(vc, animated: true)
     }
-    
+    /// Function that pushed Mac info
     func pushProductInfo(from fromvc: UIViewController, product: IPhoneModelAPI) {
-        let story = UIStoryboard(name: "ExplainiPhone", bundle: nil)
-        let vc = story.instantiateViewController(withIdentifier: "ExplainiPhone") as! ExplainiPhone
+        
+        let vc = UIStoryboard(name: "ExplainiPhone", bundle: nil).instantiateViewController(withIdentifier: "ExplainiPhone") as! ExplainiPhone
+        
         vc.configure(with: product)
         fromvc.present(vc, animated: true)
     }

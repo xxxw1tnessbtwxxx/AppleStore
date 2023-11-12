@@ -18,7 +18,6 @@
 		86620E182ADD1A6100701677 /* Categories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86620E172ADD1A6100701677 /* Categories.swift */; };
 		866788E92AD7BC830087C718 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 866788E82AD7BC830087C718 /* Profile.swift */; };
 		866788F12AD7DB730087C718 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 866788F02AD7DB730087C718 /* Alamofire */; };
-		86707DDE2AFE28B500BEE70D /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86707DDD2AFE28B500BEE70D /* BaseModel.swift */; };
 		86707DE02AFE39CC00BEE70D /* iPhoneModelAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86707DDF2AFE39CC00BEE70D /* iPhoneModelAPI.swift */; };
 		86707DE52AFE3B0200BEE70D /* ExplainiPhone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86707DE42AFE3B0200BEE70D /* ExplainiPhone.swift */; };
 		86707DE72AFE3B3D00BEE70D /* ExplainiPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86707DE62AFE3B3D00BEE70D /* ExplainiPhone.storyboard */; };
@@ -50,6 +49,8 @@
 		86AACE642AF2DAFB0056EDCB /* CartInfoLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86AACE632AF2DAFB0056EDCB /* CartInfoLoader.swift */; };
 		86AACE662AF2DE550056EDCB /* InfoTrader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86AACE652AF2DE550056EDCB /* InfoTrader.swift */; };
 		86ACA4332AFF5320003AD03E /* ExplainiPad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86ACA4322AFF5320003AD03E /* ExplainiPad.swift */; };
+		86ACA4352AFF5712003AD03E /* ExplainiPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86ACA4342AFF5712003AD03E /* ExplainiPad.storyboard */; };
+		86ACA4372B007EED003AD03E /* iPadModelAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86ACA4362B007EED003AD03E /* iPadModelAPI.swift */; };
 		86B5EA3A2AE254DD00F503C4 /* DismissUpdateButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B5EA392AE254DD00F503C4 /* DismissUpdateButton.swift */; };
 		86BF131B2AD906F400D60354 /* DataBaseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BF131A2AD906F400D60354 /* DataBaseHelper.swift */; };
 		86DF90572ADE77D80022E5EA /* EditProfileInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86DF90562ADE77D80022E5EA /* EditProfileInfo.swift */; };
@@ -73,7 +74,6 @@
 		865AC17B2ADA558E00E5DE18 /* MacModelAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacModelAPI.swift; sourceTree = "<group>"; };
 		86620E172ADD1A6100701677 /* Categories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Categories.swift; sourceTree = "<group>"; };
 		866788E82AD7BC830087C718 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
-		86707DDD2AFE28B500BEE70D /* BaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
 		86707DDF2AFE39CC00BEE70D /* iPhoneModelAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iPhoneModelAPI.swift; sourceTree = "<group>"; };
 		86707DE42AFE3B0200BEE70D /* ExplainiPhone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplainiPhone.swift; sourceTree = "<group>"; };
 		86707DE62AFE3B3D00BEE70D /* ExplainiPhone.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ExplainiPhone.storyboard; sourceTree = "<group>"; };
@@ -106,6 +106,8 @@
 		86AACE632AF2DAFB0056EDCB /* CartInfoLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartInfoLoader.swift; sourceTree = "<group>"; };
 		86AACE652AF2DE550056EDCB /* InfoTrader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoTrader.swift; sourceTree = "<group>"; };
 		86ACA4322AFF5320003AD03E /* ExplainiPad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplainiPad.swift; sourceTree = "<group>"; };
+		86ACA4342AFF5712003AD03E /* ExplainiPad.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ExplainiPad.storyboard; sourceTree = "<group>"; };
+		86ACA4362B007EED003AD03E /* iPadModelAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iPadModelAPI.swift; sourceTree = "<group>"; };
 		86B5EA392AE254DD00F503C4 /* DismissUpdateButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissUpdateButton.swift; sourceTree = "<group>"; };
 		86BF131A2AD906F400D60354 /* DataBaseHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBaseHelper.swift; sourceTree = "<group>"; };
 		86DF90562ADE77D80022E5EA /* EditProfileInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileInfo.swift; sourceTree = "<group>"; };
@@ -227,8 +229,8 @@
 			children = (
 				865AC17B2ADA558E00E5DE18 /* MacModelAPI.swift */,
 				869AD1762AF60C4E00EB5E22 /* CategoryLengthModel.swift */,
-				86707DDD2AFE28B500BEE70D /* BaseModel.swift */,
 				86707DDF2AFE39CC00BEE70D /* iPhoneModelAPI.swift */,
+				86ACA4362B007EED003AD03E /* iPadModelAPI.swift */,
 			);
 			path = ParseModelsAPI;
 			sourceTree = "<group>";
@@ -374,6 +376,7 @@
 			isa = PBXGroup;
 			children = (
 				86ACA4322AFF5320003AD03E /* ExplainiPad.swift */,
+				86ACA4342AFF5712003AD03E /* ExplainiPad.storyboard */,
 			);
 			path = "Explain iPad";
 			sourceTree = "<group>";
@@ -518,6 +521,7 @@
 				860E8FBA2AFA409A00158A7F /* ProductCell.xib in Resources */,
 				86A8D5162AD3D6CE00765EC8 /* Main.storyboard in Resources */,
 				864C66542ADA47D6004425D8 /* PythonApi in Resources */,
+				86ACA4352AFF5712003AD03E /* ExplainiPad.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -559,9 +563,9 @@
 				8643E0832AF8BAC1007E640A /* CategoryClass.swift in Sources */,
 				86FCC31F2AF42D2800E98673 /* EditCountDelegate.swift in Sources */,
 				8643E07F2AF8B88B007E640A /* Descriptions.swift in Sources */,
-				86707DDE2AFE28B500BEE70D /* BaseModel.swift in Sources */,
 				86A6CC172ADEFD4500C02F06 /* ValidateErrors.swift in Sources */,
 				86A8D5112AD3D6CE00765EC8 /* SceneDelegate.swift in Sources */,
+				86ACA4372B007EED003AD03E /* iPadModelAPI.swift in Sources */,
 				86A6E7892AF8F3E300B4429C /* EndLoadData.swift in Sources */,
 				86EDE8D72AF4DE6500C17B74 /* CategoryProductList.swift in Sources */,
 				865AC17C2ADA558E00E5DE18 /* MacModelAPI.swift in Sources */,

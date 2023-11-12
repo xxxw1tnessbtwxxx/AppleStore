@@ -418,6 +418,25 @@ products = {
                 "securitytechnology": "Face ID"
             }
         },
+    },
+
+    "ipad": {
+        0: {
+            "id": 0,
+            "title": "iPad Pro 12,9",
+            "price": 39999,
+            "image": "ipad",
+            "specs": {
+                "cpu": "A13 Bionic",
+                "memory": "64, 128, 256 GB",
+                "display": "TN",
+                "screensize": "6.5 inch"
+            },
+            "other": {
+                "colors": COLORS_12,
+                "securitytechnology": "Face ID"
+            }
+        },
     }
 
 }
