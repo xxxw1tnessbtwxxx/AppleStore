@@ -26,7 +26,9 @@ class CategoryProductListVC: UIViewController, UITableViewDelegate, UITableViewD
             cell.configure(with: item as! MacModelAPI)
             return cell
         case .ipad:
-            break
+            let item = productData[indexPath.row]
+            cell.configure(with: item as! iPadModelAPI)
+            return cell
         case .iphone:
             let item = productData[indexPath.row]
             cell.configure(with: item as! IPhoneModelAPI)
@@ -51,7 +53,7 @@ class CategoryProductListVC: UIViewController, UITableViewDelegate, UITableViewD
         case .mac:
             Router.shared.pushProductInfo(from: self, product: product as! MacModelAPI)
         case .ipad:
-            break
+            Router.shared.pushProductInfo(from: self, product: product as! iPadModelAPI)
         case .iphone:
             Router.shared.pushProductInfo(from: self, product: product as! IPhoneModelAPI)
         case .watch:
@@ -105,7 +107,13 @@ class CategoryProductListVC: UIViewController, UITableViewDelegate, UITableViewD
                     self.delegate?.iHaveEndLoadProducts()
                 }.resume()
             case .ipad:
-                break
+                AF.request("http://127.0.0.1:5000/products?category=\(self.loadCategory!.category)&id=\(id)").response { response in
+                    guard let data = response.data else { return }
+                    let product = try? JSONDecoder().decode(iPadModelAPI.self, from: data)
+                    print(product!.title)
+                    self.productData.append(product!)
+                    self.delegate?.iHaveEndLoadProducts()
+                }.resume()
             case .iphone:
                 AF.request("http://127.0.0.1:5000/products?category=\(self.loadCategory!.category)&id=\(id)").response { response in
                     guard let data = response.data else { return }

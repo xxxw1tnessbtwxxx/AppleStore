@@ -7,6 +7,7 @@ app = Flask(__name__)
 
 DEFAULT_COLORS = "Space Gray, Silver, PRODUCT(red)"
 COLORS_12 = "Space Gray, Silver, PRODUCT(red), Blue"
+IPAD_COLORS = "Silver, Gold, Space Gray"
 
 products = {
     "mac": {
@@ -427,7 +428,7 @@ products = {
             "price": 39999,
             "image": "ipad",
             "specs": {
-                "cpu": "A13 Bionic",
+                "cpu": "A9X",
                 "memory": "64, 128, 256 GB",
                 "display": "TN",
                 "screensize": "6.5 inch"

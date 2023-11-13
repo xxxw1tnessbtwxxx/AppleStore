@@ -36,6 +36,7 @@ class CategoryClass {
     init(category type: CategoryType) {
         self.type = type
         AF.request("http://127.0.0.1:5000/length?category=\(self.category)").response { response in
+            print(self.category)
             guard let data = response.data else { print("404"); return }
             let model = try? JSONDecoder().decode(CategoryLengthModel.self, from: data)
             self.categoryLength = model!.categoryLength

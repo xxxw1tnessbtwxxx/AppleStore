@@ -11,5 +11,4 @@ import Alamofire
 class APIManager {
     static let standart = APIManager()
     
-
 }
