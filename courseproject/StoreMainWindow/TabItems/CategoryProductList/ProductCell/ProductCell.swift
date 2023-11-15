@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class ProductCell: UITableViewCell {
+class ProductCell: UICollectionViewCell {
     
     var itemOfThisCell: Any?
     @IBOutlet weak var toCartButton: UIButton!

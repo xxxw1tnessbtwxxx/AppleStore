@@ -8,31 +8,23 @@
 import Foundation
 import UIKit
 import Alamofire
-class CategoryProductListVC: UIViewController, UITableViewDelegate, UITableViewDataSource, EndLoadDelegate {
-    
-    func iHaveEndLoadProducts() {
-        self.productTableView.reloadData()
-    }
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+class CategoryProductListVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, EndLoadDelegate {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return productData.count
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "ProductCell", for: indexPath) as! ProductCell
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ProductCell", for: indexPath) as! ProductCell
         switch(loadCategory!.type) {
         case .mac:
             let item = productData[indexPath.row]
             cell.configure(with: item as! MacModelAPI)
-            return cell
         case .ipad:
             let item = productData[indexPath.row]
             cell.configure(with: item as! iPadModelAPI)
-            return cell
         case .iphone:
             let item = productData[indexPath.row]
             cell.configure(with: item as! IPhoneModelAPI)
-            return cell
         case .watch:
             break
         case .vision:
@@ -44,18 +36,22 @@ class CategoryProductListVC: UIViewController, UITableViewDelegate, UITableViewD
         case .accessories:
             break
         }
+        cell.frame.size = CGSize(width: 220, height: 200)
+        cell.setNeedsLayout()
         return cell
     }
     
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let product = productData[indexPath.row]
-        switch(loadCategory!.type) {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        collectionView.deselectItem(at: indexPath, animated: true)
+        
+        switch (loadCategory!.type) {
+            
         case .mac:
-            Router.shared.pushProductInfo(from: self, product: product as! MacModelAPI)
+            Router.shared.pushProductInfo(from: self, product: productData[indexPath.row] as! MacModelAPI)
         case .ipad:
-            Router.shared.pushProductInfo(from: self, product: product as! iPadModelAPI)
+            Router.shared.pushProductInfo(from: self, product: productData[indexPath.row] as! iPadModelAPI)
         case .iphone:
-            Router.shared.pushProductInfo(from: self, product: product as! IPhoneModelAPI)
+            Router.shared.pushProductInfo(from: self, product: productData[indexPath.row] as! IPhoneModelAPI)
         case .watch:
             break
         case .vision:
@@ -67,9 +63,16 @@ class CategoryProductListVC: UIViewController, UITableViewDelegate, UITableViewD
         case .accessories:
             break
         }
+        
     }
-   
-    @IBOutlet weak var productTableView: UITableView!
+    
+    func iHaveEndLoadProducts() {
+        self.collectionView.reloadData()
+    }
+    
+
+
+    @IBOutlet weak var collectionView: UICollectionView!
     var delegate: EndLoadDelegate?
     private var loadCategory: CategoryClass?
     private var productData: [Any] = []
@@ -77,20 +80,28 @@ class CategoryProductListVC: UIViewController, UITableViewDelegate, UITableViewD
     @IBOutlet weak var categoryImage: UIImageView!
     @IBOutlet var categoryTitle: UILabel!
     
-    
-    
+ 
     override func viewDidLoad() {
         self.delegate = self
-        productTableView.frame.size.width = UIScreen.main.bounds.width
         self.categoryImage.image = Descriptions.getter.returnImage(forKey: loadCategory!.type)
         self.categoryTitle.text = Descriptions.getter.returnTitle(forKey: loadCategory!.type)
+        
+        
+        
         super.viewDidLoad()
-        self.productTableView.dataSource = self
-        self.productTableView.delegate = self
-        self.productTableView.rowHeight = 170
+        
+        let layout = UICollectionViewFlowLayout()
+        layout.itemSize = CGSize(width: collectionView.frame.width / 2.3, height: 200)
+
+        collectionView.setCollectionViewLayout(layout, animated: false)
+        
+        self.collectionView.dataSource = self
+        self.collectionView.delegate = self
         
         let nib = UINib(nibName: "ProductCell", bundle: nil)
-        self.productTableView.register(nib, forCellReuseIdentifier: "ProductCell")
+        self.collectionView.register(nib, forCellWithReuseIdentifier: "ProductCell")
+        
+        
     }
     
 
@@ -156,7 +167,7 @@ class CategoryProductListVC: UIViewController, UITableViewDelegate, UITableViewD
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         downloadApiData()
-        self.productTableView.reloadData()
+        self.collectionView.reloadData()
     }
     
     func setCategory(category: CategoryClass) {
