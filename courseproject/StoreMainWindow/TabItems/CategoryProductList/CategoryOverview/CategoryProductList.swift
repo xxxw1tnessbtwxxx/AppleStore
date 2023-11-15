@@ -103,7 +103,7 @@ class CategoryProductListVC: UIViewController, UICollectionViewDelegate, UIColle
         
         
     }
-    
+
 
     
     private func downloadApiData() {

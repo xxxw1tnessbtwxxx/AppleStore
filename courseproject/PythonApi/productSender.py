@@ -174,7 +174,7 @@ products = {
                 "color": "silver",
                 "touchID": True
             }
-        },
+        }
     
     },
 
@@ -183,7 +183,7 @@ products = {
             "id": 0,
             "title": "iPhone SE",
             "price": 39999,
-            "image": "iphone",
+            "image": "iphonese2.jpeg",
             "specs": {
                 "cpu": "A15 Bionic",
                 "memory": "128, 256, 512 GB",
@@ -199,7 +199,7 @@ products = {
             "id": 1,
             "title": "iPhone X",
             "price": 39999,
-            "image": "iphone",
+            "image": "iphonex",
             "specs": {
                 "cpu": "A11 Bionic",
                 "memory": "64, 128, 256 GB",
@@ -215,7 +215,7 @@ products = {
             "id": 2,
             "title": "iPhone XS",
             "price": 39999,
-            "image": "iphone",
+            "image": "iphonexs.png",
             "specs": {
                 "cpu": "A12 Bionic",
                 "memory": "64, 128, 256 GB",
@@ -231,7 +231,7 @@ products = {
             "id": 3,
             "title": "iPhone XS Max",
             "price": 39999,
-            "image": "iphone",
+            "image": "iphonexsmax.jpeg",
             "specs": {
                 "cpu": "A12 Bionic",
                 "memory": "64, 128, 256 GB",
@@ -247,7 +247,7 @@ products = {
             "id": 4,
             "title": "iPhone 11",
             "price": 39999,
-            "image": "iphone",
+            "image": "iphone11.jpeg",
             "specs": {
                 "cpu": "A12 Bionic",
                 "memory": "64, 128, 256 GB",
@@ -263,7 +263,7 @@ products = {
             "id": 5,
             "title": "iPhone 11 Pro",
             "price": 39999,
-            "image": "iphone",
+            "image": "iphone11pro.jpeg",
             "specs": {
                 "cpu": "A13 Bionic",
                 "memory": "64, 128, 256 GB",
@@ -279,7 +279,7 @@ products = {
             "id": 6,
             "title": "iPhone 11 Pro Max",
             "price": 39999,
-            "image": "iphone",
+            "image": "iphone11promax.jpegg",
             "specs": {
                 "cpu": "A13 Bionic",
                 "memory": "64, 128, 256 GB",
@@ -295,7 +295,7 @@ products = {
             "id": 7,
             "title": "iPhone 12",
             "price": 39999,
-            "image": "iphone",
+            "image": "iphone12.jpeg",
             "specs": {
                 "cpu": "A13 Bionic",
                 "memory": "64, 128, 256 GB",
@@ -311,7 +311,7 @@ products = {
             "id": 8,
             "title": "iPhone 12 Pro",
             "price": 39999,
-            "image": "iphone",
+            "image": "iphone12pro.png",
             "specs": {
                 "cpu": "A14 Bionic",
                 "memory": "64, 128, 256 GB",
@@ -327,7 +327,7 @@ products = {
             "id": 9,
             "title": "iPhone 12 Pro Max",
             "price": 39999,
-            "image": "iphone",
+            "image": "iphone12promax.jpeg",
             "specs": {
                 "cpu": "A14 Bionic",
                 "memory": "64, 128, 256 GB",
@@ -343,7 +343,7 @@ products = {
             "id": 10,
             "title": "iPhone 12 Mini",
             "price": 39999,
-            "image": "iphone",
+            "image": "iphone12mini.jpeg",
             "specs": {
                 "cpu": "A13 Bionic",
                 "memory": "64, 128, 256 GB",
@@ -357,9 +357,9 @@ products = {
         },
         11: {
             "id": 11,
-            "title": "iPhone 13",
+            "title": "iPhone 13.jpeg",
             "price": 39999,
-            "image": "iphone",
+            "image": "iphone13",
             "specs": {
                 "cpu": "A14 Bionic",
                 "memory": "64, 128, 256 GB",
@@ -375,7 +375,7 @@ products = {
             "id": 12,
             "title": "iPhone 13 Pro",
             "price": 39999,
-            "image": "iphone",
+            "image": "iphone13pro.jpeg",
             "specs": {
                 "cpu": "A15 Bionic",
                 "memory": "64, 128, 256 GB",
@@ -391,7 +391,7 @@ products = {
             "id": 12,
             "title": "iPhone 13 Pro Max",
             "price": 39999,
-            "image": "iphone",
+            "image": "iphone13promax.jpeg",
             "specs": {
                 "cpu": "A15 Bionic",
                 "memory": "64, 128, 256 GB",
@@ -407,7 +407,7 @@ products = {
             "id": 13,
             "title": "iPhone 13 Mini",
             "price": 39999,
-            "image": "iphone",
+            "image": "iphone13mini.jpeg",
             "specs": {
                 "cpu": "A15 Bionic",
                 "memory": "64, 128, 256 GB",

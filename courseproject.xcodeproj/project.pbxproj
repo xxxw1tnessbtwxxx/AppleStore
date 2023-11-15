@@ -316,7 +316,7 @@
 				86A6CC1D2ADFA8CE00C02F06 /* Structs & Classes */,
 				86A6CC132ADEFD1500C02F06 /* Enums */,
 				86DF905B2ADE79A10022E5EA /* ClassHelpers */,
-				86BF13192AD906E700D60354 /* Database */,
+				86BF13192AD906E700D60354 /* database */,
 				86A8D52F2AD3FCD100765EC8 /* StoreMainWindow */,
 				86A8D5282AD3EF7800765EC8 /* RegisterPage */,
 				86A8D5242AD3DDF300765EC8 /* Resources */,
@@ -392,12 +392,12 @@
 			path = Delegates;
 			sourceTree = "<group>";
 		};
-		86BF13192AD906E700D60354 /* Database */ = {
+		86BF13192AD906E700D60354 /* database */ = {
 			isa = PBXGroup;
 			children = (
 				86BF131A2AD906F400D60354 /* DataBaseHelper.swift */,
 			);
-			path = Database;
+			path = database;
 			sourceTree = "<group>";
 		};
 		86DF90552ADE77CB0022E5EA /* Profile */ = {
