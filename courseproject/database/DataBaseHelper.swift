@@ -13,8 +13,13 @@ final class DataBaseHelper {
     static let shared = DataBaseHelper()
     let db = try? Connection("/Users/w1tnessbtw/Dev/Swift/AppleStore/courseproject/Store.db")
     
-    func isFieldFilled() -> Bool {
-
+    
+    func isFieldFilled(from: UIViewController, for login: String) -> Bool {
+        if let _ = try? db!.scalar("SELECT livingAddress, postname FROM users WHERE login = '\(login)'") {
+            return true
+        }
+        
+        AlertsCreator.MakePrimitiveAlert(vc: from, title: "Oops...", message: "You have empty living Address and Postcode.\nFill it in Profile Page", buttonTitle: "OK!")
         return false
     }
     

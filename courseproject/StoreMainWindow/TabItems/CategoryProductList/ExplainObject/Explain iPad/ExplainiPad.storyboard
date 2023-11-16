@@ -75,6 +75,9 @@
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="To cart"/>
+                                <connections>
+                                    <action selector="didTapCartButton:" destination="dik-TB-HHE" eventType="touchUpInside" id="OGd-Bc-PSV"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="fyq-ou-27x"/>

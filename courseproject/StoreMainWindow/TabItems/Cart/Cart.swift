@@ -26,9 +26,25 @@ final class Cart {
         print(totalPrice, data.count)
     }
     
+    /// Function for clear cart
+    func dispose() {
+        self.data.removeAll()
+        self.totalPrice = 0
+    }
+    
     /// Function for interaction with cart total price
     func changeTotalPrice(value: Double) {
         self.totalPrice += value
+    }
+    
+    /// Function for deleting row
+    func decreaseTotalPrice(value: Double, _ times: Int) {
+        self.totalPrice -= (Double(value * Double(times)))
+    }
+    
+    /// Function for delete a product from bucket
+    func deleteProduct(at: Int) {
+        self.data.remove(at: at)
     }
     
     /// Function for get data

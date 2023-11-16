@@ -37,5 +37,7 @@ class ExplainiPhone: UIViewController {
     
     @IBAction func didTapCartButton(_ sender: Any) {
         Cart.bucket.addProduct(CartItem(title: self.get!.title, price: Double(self.get!.price), image: UIImage(named: self.get!.image)!))
+        self.dismiss(animated: true)
+
     }
 }

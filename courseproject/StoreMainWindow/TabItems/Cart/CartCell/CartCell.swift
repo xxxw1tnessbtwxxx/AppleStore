@@ -11,13 +11,20 @@ import UIKit
 class CartCell: UITableViewCell {
     
     var delegate: EditCountDelegate?
-    private var gettedItem: CartItem?
+    var gettedItem: CartItem?
     @IBOutlet weak var orderPrice: UILabel!
     @IBOutlet weak var orderImage: UIImageView!
     @IBOutlet weak var orderTitle: UILabel!
     @IBOutlet weak var orderStepper: UIStepper!
     @IBOutlet weak var orderCount: UILabel!
-    private var thisOrderCounter: Int = 1
+    var thisOrderCounter: Int = 1
+    
+    
+    
+    func resetCell() {
+        self.orderStepper.value = 1
+        self.thisOrderCounter = 1
+    }
     
     func configure(order item: CartItem) {
         self.gettedItem = item
@@ -28,7 +35,7 @@ class CartCell: UITableViewCell {
     }
     
     @IBAction func didTapChangeCount(_ sender: Any) {
-        self.orderCount.text = String(orderStepper.value)
+        self.orderCount.text = "Count: \(Int(orderStepper.value))"
         if (Int(orderStepper.value) > thisOrderCounter) {
             Cart.bucket.changeTotalPrice(value: gettedItem!.price)
             thisOrderCounter += 1

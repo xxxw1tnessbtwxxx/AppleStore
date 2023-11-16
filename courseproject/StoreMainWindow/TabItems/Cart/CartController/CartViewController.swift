@@ -12,13 +12,43 @@ class CartViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     
     func iHaveEditedCount() {
-        self.totalLabel.text = "Total: \(Cart.bucket.downloadTotalPrice())"
+        self.orderButton.setTitle("Order: \(Int(Cart.bucket.downloadTotalPrice()))", for: .normal)
     }
     
     
+    @IBOutlet weak var orderButton: UIButton!
     @IBOutlet weak var totalLabel: UILabel!
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return cartData.count
+    }
+    
+    private func order() {
+        
+        if (!DataBaseHelper.shared.isFieldFilled(from: self, for: UserDefaultsHelper.shared.loadLogin())) {
+            return
+        }
+        for index in 0..<cartTableView.numberOfRows(inSection: 0) {
+            let cell = cartTableView.cellForRow(at: IndexPath(row: index, section: 0)) as! CartCell
+        }
+        
+        Cart.bucket.dispose()
+        self.cartData.removeAll()
+        self.cartTableView.reloadData()
+        self.orderButton.setTitle("Order: \(Int(Cart.bucket.downloadTotalPrice()))", for: .normal)
+    }
+    
+    @IBAction func didTapOrderButton(_ sender: Any) {
+        let controller = UIAlertController(title: "Are you sure?", message: "You want to order items in your table?", preferredStyle: .alert)
+        let acceptAction = UIAlertAction(title: "Yes", style: .default) { action in
+            self.order()
+        }
+        
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel)
+        controller.addAction(cancelAction)
+        controller.addAction(acceptAction)
+        self.present(controller, animated: true)
+        
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -29,8 +59,22 @@ class CartViewController: UIViewController, UITableViewDataSource, UITableViewDe
         return cell
     }
     
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        self.cartTableView.deselectRow(at: indexPath, animated: true)
+    func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCell.EditingStyle {
+        return .delete
+    }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        tableView.beginUpdates()
+        cartData.remove(at: indexPath.row)
+        let cell = tableView.cellForRow(at: indexPath) as! CartCell
+        Cart.bucket.decreaseTotalPrice(value: cell.gettedItem!.price, cell.thisOrderCounter)
+        Cart.bucket.deleteProduct(at: indexPath.row)
+        cell.resetCell()
+        
+        self.orderButton.setTitle("Order: \(Int(Cart.bucket.downloadTotalPrice()))", for: .normal)
+ 
+        tableView.deleteRows(at: [indexPath], with: .fade)
+        tableView.endUpdates()
     }
     
     @IBOutlet weak var cartTableView: UITableView!
@@ -43,12 +87,13 @@ class CartViewController: UIViewController, UITableViewDataSource, UITableViewDe
         let nib = UINib(nibName: "CartCell", bundle: nil)
         self.cartTableView.register(nib, forCellReuseIdentifier: "CartCell")
         self.cartTableView.rowHeight = 150
+
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         cartData = Cart.bucket.returnData()
-        self.totalLabel.text = "Total: \(Cart.bucket.downloadTotalPrice())"
+        self.orderButton.setTitle("Order: \(Int(Cart.bucket.downloadTotalPrice()))", for: .normal)
         self.cartTableView.reloadData()
     }
         
