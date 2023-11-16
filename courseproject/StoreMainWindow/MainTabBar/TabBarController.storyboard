@@ -151,14 +151,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="LBa-62-VQc">
-                                <rect key="frame" x="28" y="81" width="337" height="573"/>
+                                <rect key="frame" x="28" y="319" width="337" height="414"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5mT-Ey-WFT">
-                                <rect key="frame" x="47" y="696" width="299" height="29"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xZa-S4-f66">
+                                <rect key="frame" x="28" y="259" width="337" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -169,7 +169,7 @@
                     <tabBarItem key="tabBarItem" title="Cart" image="cart" catalog="system" id="fGc-1Z-Z9X"/>
                     <connections>
                         <outlet property="cartTableView" destination="LBa-62-VQc" id="JfQ-8g-thA"/>
-                        <outlet property="totalLabel" destination="5mT-Ey-WFT" id="P6g-xX-bqs"/>
+                        <outlet property="totalLabel" destination="xZa-S4-f66" id="Da0-fq-SHh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jqv-5g-TUX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -430,7 +430,7 @@
         <image name="person.crop.circle" catalog="system" width="128" height="123"/>
         <image name="visionpro" catalog="system" width="128" height="70"/>
         <systemColor name="linkColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

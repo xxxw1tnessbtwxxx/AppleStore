@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		860B75E82B0528CA007520BE /* Cart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860B75E72B0528CA007520BE /* Cart.swift */; };
+		860B75EA2B0528F7007520BE /* CartItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860B75E92B0528F7007520BE /* CartItem.swift */; };
 		860E8FBA2AFA409A00158A7F /* ProductCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 860E8FB92AFA409A00158A7F /* ProductCell.xib */; };
 		860E8FBE2AFA475C00158A7F /* Mac.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 860E8FBD2AFA475C00158A7F /* Mac.storyboard */; };
 		8643E07F2AF8B88B007E640A /* Descriptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8643E07E2AF8B88B007E640A /* Descriptions.swift */; };
@@ -47,7 +49,6 @@
 		86A8D5312AD3FDE400765EC8 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A8D5302AD3FDE400765EC8 /* TabBarController.swift */; };
 		86A8D5332AD3FDEA00765EC8 /* TabBarController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86A8D5322AD3FDEA00765EC8 /* TabBarController.storyboard */; };
 		86AACE642AF2DAFB0056EDCB /* CartInfoLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86AACE632AF2DAFB0056EDCB /* CartInfoLoader.swift */; };
-		86AACE662AF2DE550056EDCB /* InfoTrader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86AACE652AF2DE550056EDCB /* InfoTrader.swift */; };
 		86ACA4332AFF5320003AD03E /* ExplainiPad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86ACA4322AFF5320003AD03E /* ExplainiPad.swift */; };
 		86ACA4352AFF5712003AD03E /* ExplainiPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86ACA4342AFF5712003AD03E /* ExplainiPad.storyboard */; };
 		86ACA4372B007EED003AD03E /* iPadModelAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86ACA4362B007EED003AD03E /* iPadModelAPI.swift */; };
@@ -64,6 +65,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		860B75E72B0528CA007520BE /* Cart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cart.swift; sourceTree = "<group>"; };
+		860B75E92B0528F7007520BE /* CartItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartItem.swift; sourceTree = "<group>"; };
 		860E8FB92AFA409A00158A7F /* ProductCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductCell.xib; sourceTree = "<group>"; };
 		860E8FBD2AFA475C00158A7F /* Mac.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Mac.storyboard; sourceTree = "<group>"; };
 		8643E07E2AF8B88B007E640A /* Descriptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Descriptions.swift; sourceTree = "<group>"; };
@@ -104,7 +107,6 @@
 		86A8D5302AD3FDE400765EC8 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		86A8D5322AD3FDEA00765EC8 /* TabBarController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBarController.storyboard; sourceTree = "<group>"; };
 		86AACE632AF2DAFB0056EDCB /* CartInfoLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartInfoLoader.swift; sourceTree = "<group>"; };
-		86AACE652AF2DE550056EDCB /* InfoTrader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoTrader.swift; sourceTree = "<group>"; };
 		86ACA4322AFF5320003AD03E /* ExplainiPad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplainiPad.swift; sourceTree = "<group>"; };
 		86ACA4342AFF5712003AD03E /* ExplainiPad.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ExplainiPad.storyboard; sourceTree = "<group>"; };
 		86ACA4362B007EED003AD03E /* iPadModelAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iPadModelAPI.swift; sourceTree = "<group>"; };
@@ -145,7 +147,6 @@
 		863B48142AF21F98003A46F1 /* CategoriesCell */ = {
 			isa = PBXGroup;
 			children = (
-				86AACE652AF2DE550056EDCB /* InfoTrader.swift */,
 			);
 			path = CategoriesCell;
 			sourceTree = "<group>";
@@ -203,6 +204,7 @@
 			children = (
 				869A1E122AF2CCC3004A4A19 /* CartController */,
 				869A1E112AF2CCB4004A4A19 /* CartCell */,
+				860B75E72B0528CA007520BE /* Cart.swift */,
 			);
 			path = Cart;
 			sourceTree = "<group>";
@@ -277,6 +279,7 @@
 				86EDE8CF2AF4D8F600C17B74 /* CategoryType.swift */,
 				8643E07E2AF8B88B007E640A /* Descriptions.swift */,
 				8643E0822AF8BAC1007E640A /* CategoryClass.swift */,
+				860B75E92B0528F7007520BE /* CartItem.swift */,
 			);
 			path = "Structs & Classes";
 			sourceTree = "<group>";
@@ -549,10 +552,10 @@
 				86EDE8D02AF4D8F600C17B74 /* CategoryType.swift in Sources */,
 				86A6E7822AF8C2EF00B4429C /* APIManager.swift in Sources */,
 				866788E92AD7BC830087C718 /* Profile.swift in Sources */,
-				86AACE662AF2DE550056EDCB /* InfoTrader.swift in Sources */,
 				86A8D5312AD3FDE400765EC8 /* TabBarController.swift in Sources */,
 				869A1E142AF2CF83004A4A19 /* CartViewController.swift in Sources */,
 				869A1E162AF2CF9C004A4A19 /* CartCell.swift in Sources */,
+				860B75E82B0528CA007520BE /* Cart.swift in Sources */,
 				86A8D50F2AD3D6CE00765EC8 /* AppDelegate.swift in Sources */,
 				8656533B2AE13406004B7E49 /* UserModel.swift in Sources */,
 				86A6CC1F2ADFAB6F00C02F06 /* Crypto.swift in Sources */,
@@ -568,6 +571,7 @@
 				86ACA4372B007EED003AD03E /* iPadModelAPI.swift in Sources */,
 				86A6E7892AF8F3E300B4429C /* EndLoadData.swift in Sources */,
 				86EDE8D72AF4DE6500C17B74 /* CategoryProductList.swift in Sources */,
+				860B75EA2B0528F7007520BE /* CartItem.swift in Sources */,
 				865AC17C2ADA558E00E5DE18 /* MacModelAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -35,4 +35,7 @@ class ExplainiPhone: UIViewController {
     
     func configure(with product: IPhoneModelAPI) { self.get = product }
     
+    @IBAction func didTapCartButton(_ sender: Any) {
+        Cart.bucket.addProduct(CartItem(title: self.get!.title, price: Double(self.get!.price), image: UIImage(named: self.get!.image)!))
+    }
 }

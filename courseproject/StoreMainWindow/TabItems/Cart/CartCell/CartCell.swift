@@ -11,7 +11,7 @@ import UIKit
 class CartCell: UITableViewCell {
     
     var delegate: EditCountDelegate?
-    private var gettedItem: MacModelAPI? = nil
+    private var gettedItem: CartItem?
     @IBOutlet weak var orderPrice: UILabel!
     @IBOutlet weak var orderImage: UIImageView!
     @IBOutlet weak var orderTitle: UILabel!
@@ -19,19 +19,24 @@ class CartCell: UITableViewCell {
     @IBOutlet weak var orderCount: UILabel!
     private var thisOrderCounter: Int = 1
     
-    func configure(order item: MacModelAPI) {
+    func configure(order item: CartItem) {
         self.gettedItem = item
         self.orderCount.text =  "Count: \(Int(self.orderStepper.value))"
         self.orderPrice.text = "\(item.price) руб."
-        self.orderImage.image = UIImage(named: item.image)
+        self.orderImage.image = item.image
         self.orderTitle.text = item.title
     }
     
     @IBAction func didTapChangeCount(_ sender: Any) {
-        
-        InfoTrader.shared.incrementTotalPrice(add: Double(self.gettedItem!.price) * self.orderStepper.value)
-        self.orderCount.text = "Count: \(Int(self.orderStepper.value))"
-        thisOrderCounter = Int(self.orderStepper.value)
+        self.orderCount.text = String(orderStepper.value)
+        if (Int(orderStepper.value) > thisOrderCounter) {
+            Cart.bucket.changeTotalPrice(value: gettedItem!.price)
+            thisOrderCounter += 1
+        }
+        else {
+            Cart.bucket.changeTotalPrice(value: -gettedItem!.price)
+            thisOrderCounter -= 1
+        }
         delegate?.iHaveEditedCount()
     }
 }

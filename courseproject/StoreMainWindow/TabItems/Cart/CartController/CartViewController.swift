@@ -10,8 +10,9 @@ import UIKit
 
 class CartViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, EditCountDelegate {
     
+    
     func iHaveEditedCount() {
-        self.totalLabel.text = "Total: \(InfoTrader.shared.getTotalPrice())"
+        self.totalLabel.text = "Total: \(Cart.bucket.downloadTotalPrice())"
     }
     
     
@@ -34,8 +35,7 @@ class CartViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     @IBOutlet weak var cartTableView: UITableView!
     
-    var cartData: [MacModelAPI] = []
-    var delegate: CartInfoLoader?
+    var cartData: [CartItem] = []
     override func viewDidLoad() {
         super.viewDidLoad()
         self.cartTableView.dataSource = self
@@ -47,8 +47,8 @@ class CartViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        cartData = InfoTrader.shared.downloadProducts()
-        self.totalLabel.text = "Total: \(InfoTrader.shared.getTotalPrice())"
+        cartData = Cart.bucket.returnData()
+        self.totalLabel.text = "Total: \(Cart.bucket.downloadTotalPrice())"
         self.cartTableView.reloadData()
     }
         

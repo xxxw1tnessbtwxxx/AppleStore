@@ -14,7 +14,7 @@ products = {
         0: {
             "id": 0,
             "title": 'MacBook Pro 15 2018',
-            "price": 156999,
+            "price": 85000,
             "image": "macpro15.jpeg",
             "specs": {
                 "cpu": "Intel Core i7, 6 core, 2.7Ghz",
@@ -30,7 +30,7 @@ products = {
         1: {
             "id": 1,
             "title": 'MacBook Pro 13 2020',
-            "price": 139999,
+            "price": 88027,
             "image": "macpro13.jpeg",
             "specs": {
                 "cpu": "Intel Core i5, 4 core, 2.3Ghz",
@@ -46,7 +46,7 @@ products = {
         2: {
             "id": 2,
             "title": 'MacBook Pro 16 2021',
-            "price": 139999,
+            "price": 192699,
             "image": "macpro16.jpeg",
             "specs": {
                 "cpu": "Apple M1, 8 core, 3.3Ghz",
@@ -62,7 +62,7 @@ products = {
         3: {
             "id": 3,
             "title": 'MacBook Pro 16 2022',
-            "price": 139999,
+            "price": 229999,
             "image": "macpro16.jpeg",
             "specs": {
                 "cpu": "Apple M2, 8 core, 3.8Ghz",
@@ -79,7 +79,7 @@ products = {
         3: {
             "id": 3,
             "title": 'MacBook Pro 16 2022',
-            "price": 139999,
+            "price": 249999,
             "image": "macpro16.jpeg",
             "specs": {
                 "cpu": "Apple M2 Pro, 12 core, 3.8Ghz",
@@ -96,7 +96,7 @@ products = {
         4: {
             "id": 4,
             "title": 'MacBook Pro 16 2022',
-            "price": 139999,
+            "price": 264999,
             "image": "macpro16.jpeg",
             "specs": {
                 "cpu": "Apple M2 Max, 16 core, 3.8Ghz",
@@ -113,7 +113,7 @@ products = {
         5: {
             "id": 5,
             "title": 'MacBook Pro 14 2021',
-            "price": 139999,
+            "price": 179990,
             "image": "macpro14.jpeg",
             "specs": {
                 "cpu": "Apple M1 Pro, 16 core, 3.8Ghz",
@@ -129,7 +129,7 @@ products = {
         6: {
             "id": 6,
             "title": 'MacBook Pro 14 2021',
-            "price": 139999,
+            "price": 159990,
             "image": "macpro14.jpeg",
             "specs": {
                 "cpu": "Apple M1, 16 core, 3.8Ghz",
@@ -146,7 +146,7 @@ products = {
         7: {
             "id": 7,
             "title": 'MacBook Pro 14 2021',
-            "price": 139999,
+            "price": 184990,
             "image": "macpro14.jpeg",
             "specs": {
                 "cpu": "Apple M1 Pro, 16 core, 3.8Ghz",
@@ -162,7 +162,7 @@ products = {
         7: {
             "id": 7,
             "title": 'MacBook Pro 14 2021',
-            "price": 139999,
+            "price": 192999,
             "image": "macpro14.jpeg",
             "specs": {
                 "cpu": "Apple M1 Max, 16 core, 3.8Ghz",
@@ -182,7 +182,7 @@ products = {
         0: {
             "id": 0,
             "title": "iPhone SE",
-            "price": 39999,
+            "price": 59990,
             "image": "iphonese2.jpeg",
             "specs": {
                 "cpu": "A15 Bionic",
@@ -198,7 +198,7 @@ products = {
         1: {
             "id": 1,
             "title": "iPhone X",
-            "price": 39999,
+            "price": 29990,
             "image": "iphonex",
             "specs": {
                 "cpu": "A11 Bionic",
@@ -214,7 +214,7 @@ products = {
         2: {
             "id": 2,
             "title": "iPhone XS",
-            "price": 39999,
+            "price": 39990,
             "image": "iphonexs.png",
             "specs": {
                 "cpu": "A12 Bionic",
@@ -230,7 +230,7 @@ products = {
         3: {
             "id": 3,
             "title": "iPhone XS Max",
-            "price": 39999,
+            "price": 44990,
             "image": "iphonexsmax.jpeg",
             "specs": {
                 "cpu": "A12 Bionic",
@@ -246,7 +246,7 @@ products = {
         4: {
             "id": 4,
             "title": "iPhone 11",
-            "price": 39999,
+            "price": 55990,
             "image": "iphone11.jpeg",
             "specs": {
                 "cpu": "A12 Bionic",
@@ -262,7 +262,7 @@ products = {
         5: {
             "id": 5,
             "title": "iPhone 11 Pro",
-            "price": 39999,
+            "price": 52990,
             "image": "iphone11pro.jpeg",
             "specs": {
                 "cpu": "A13 Bionic",
@@ -278,7 +278,7 @@ products = {
         6: {
             "id": 6,
             "title": "iPhone 11 Pro Max",
-            "price": 39999,
+            "price": 54990,
             "image": "iphone11promax.jpegg",
             "specs": {
                 "cpu": "A13 Bionic",
@@ -294,7 +294,7 @@ products = {
         7: {
             "id": 7,
             "title": "iPhone 12",
-            "price": 39999,
+            "price": 73990,
             "image": "iphone12.jpeg",
             "specs": {
                 "cpu": "A13 Bionic",
@@ -310,7 +310,7 @@ products = {
         8: {
             "id": 8,
             "title": "iPhone 12 Pro",
-            "price": 39999,
+            "price": 77990,
             "image": "iphone12pro.png",
             "specs": {
                 "cpu": "A14 Bionic",
@@ -326,7 +326,7 @@ products = {
         9: {
             "id": 9,
             "title": "iPhone 12 Pro Max",
-            "price": 39999,
+            "price": 107090,
             "image": "iphone12promax.jpeg",
             "specs": {
                 "cpu": "A14 Bionic",
@@ -342,7 +342,7 @@ products = {
         10: {
             "id": 10,
             "title": "iPhone 12 Mini",
-            "price": 39999,
+            "price": 58590,
             "image": "iphone12mini.jpeg",
             "specs": {
                 "cpu": "A13 Bionic",
@@ -358,7 +358,7 @@ products = {
         11: {
             "id": 11,
             "title": "iPhone 13.jpeg",
-            "price": 39999,
+            "price": 79990,
             "image": "iphone13",
             "specs": {
                 "cpu": "A14 Bionic",
@@ -374,7 +374,7 @@ products = {
         12: {
             "id": 12,
             "title": "iPhone 13 Pro",
-            "price": 39999,
+            "price": 129990,
             "image": "iphone13pro.jpeg",
             "specs": {
                 "cpu": "A15 Bionic",
@@ -390,7 +390,7 @@ products = {
         12: {
             "id": 12,
             "title": "iPhone 13 Pro Max",
-            "price": 39999,
+            "price": 135964,
             "image": "iphone13promax.jpeg",
             "specs": {
                 "cpu": "A15 Bionic",
@@ -406,7 +406,7 @@ products = {
         13: {
             "id": 13,
             "title": "iPhone 13 Mini",
-            "price": 39999,
+            "price": 75990,
             "image": "iphone13mini.jpeg",
             "specs": {
                 "cpu": "A15 Bionic",
@@ -425,7 +425,7 @@ products = {
         0: {
             "id": 0,
             "title": "iPad Pro 12,9",
-            "price": 39999,
+            "price": 146800,
             "image": "ipad",
             "specs": {
                 "cpu": "A9X",
@@ -441,6 +441,7 @@ products = {
     }
 
 }
+
 
 @app.route('/length')
 def returnLength():
