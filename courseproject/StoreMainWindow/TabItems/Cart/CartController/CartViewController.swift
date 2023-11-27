@@ -7,9 +7,10 @@
 
 import Foundation
 import UIKit
-
+import AVFoundation
 class CartViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, EditCountDelegate {
     
+    var soundPlayer: AVAudioPlayer?
     
     func iHaveEditedCount() {
         self.orderButton.setTitle("Order: \(Int(Cart.bucket.downloadTotalPrice()))", for: .normal)
@@ -23,13 +24,24 @@ class CartViewController: UIViewController, UITableViewDataSource, UITableViewDe
         return cartData.count
     }
     
+    
+    @IBAction func didTapMyOrderButton(_ sender: Any) {
+        print(DataBaseHelper.shared.getOrders(user: UserDefaultsHelper.shared.loadLogin()))
+    }
+    
     private func order() {
         
         if (!DataBaseHelper.shared.isFieldFilled(from: self, for: UserDefaultsHelper.shared.loadLogin())) {
             return
         }
+        let asset = NSDataAsset(name: "applepay")
+        soundPlayer = try? AVAudioPlayer(data: asset!.data, fileTypeHint: "mp3")
+        soundPlayer!.play()
         for index in 0..<cartTableView.numberOfRows(inSection: 0) {
             let cell = cartTableView.cellForRow(at: IndexPath(row: index, section: 0)) as! CartCell
+            DataBaseHelper.shared.createOrder(for: self, UserDefaultsHelper.shared.loadLogin(), data: cell.gettedItem!.title, String(cell.gettedItem!.price), String(cell.thisOrderCounter))
+            Cart.bucket.decreaseTotalPrice(value: cell.gettedItem!.price, cell.thisOrderCounter)
+            cell.resetCell()
         }
         
         Cart.bucket.dispose()

@@ -11,6 +11,10 @@
 		860B75EA2B0528F7007520BE /* CartItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860B75E92B0528F7007520BE /* CartItem.swift */; };
 		860E8FBA2AFA409A00158A7F /* ProductCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 860E8FB92AFA409A00158A7F /* ProductCell.xib */; };
 		860E8FBE2AFA475C00158A7F /* Mac.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 860E8FBD2AFA475C00158A7F /* Mac.storyboard */; };
+		862642272B06A41A00FC474C /* Mac.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862642262B06A41A00FC474C /* Mac.swift */; };
+		8631B48A2B08ADB7000AF03E /* AirpodsModelAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8631B4892B08ADB7000AF03E /* AirpodsModelAPI.swift */; };
+		8631B48D2B08AEB6000AF03E /* ExplainAirpods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8631B48C2B08AEB6000AF03E /* ExplainAirpods.swift */; };
+		8631B48F2B08CA5D000AF03E /* ExplainAirpods.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8631B48E2B08CA5D000AF03E /* ExplainAirpods.storyboard */; };
 		8643E07F2AF8B88B007E640A /* Descriptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8643E07E2AF8B88B007E640A /* Descriptions.swift */; };
 		8643E0832AF8BAC1007E640A /* CategoryClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8643E0822AF8BAC1007E640A /* CategoryClass.swift */; };
 		864C66542ADA47D6004425D8 /* PythonApi in Resources */ = {isa = PBXBuildFile; fileRef = 864C66532ADA47D5004425D8 /* PythonApi */; };
@@ -26,6 +30,7 @@
 		86707DE92AFE3E8300BEE70D /* ExplainMac.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86707DE82AFE3E8300BEE70D /* ExplainMac.storyboard */; };
 		86707DEB2AFE3E8D00BEE70D /* ExplainMac.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86707DEA2AFE3E8D00BEE70D /* ExplainMac.swift */; };
 		8679BE022AE14AEA00B47233 /* UserDefaultsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8679BE012AE14AEA00B47233 /* UserDefaultsHelper.swift */; };
+		8690D91F2B11CD1800AE6120 /* OrderList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8690D91E2B11CD1800AE6120 /* OrderList.swift */; };
 		869A1E142AF2CF83004A4A19 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869A1E132AF2CF83004A4A19 /* CartViewController.swift */; };
 		869A1E162AF2CF9C004A4A19 /* CartCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869A1E152AF2CF9B004A4A19 /* CartCell.swift */; };
 		869A1E182AF2CFA8004A4A19 /* CartCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 869A1E172AF2CFA8004A4A19 /* CartCell.xib */; };
@@ -69,6 +74,10 @@
 		860B75E92B0528F7007520BE /* CartItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartItem.swift; sourceTree = "<group>"; };
 		860E8FB92AFA409A00158A7F /* ProductCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductCell.xib; sourceTree = "<group>"; };
 		860E8FBD2AFA475C00158A7F /* Mac.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Mac.storyboard; sourceTree = "<group>"; };
+		862642262B06A41A00FC474C /* Mac.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mac.swift; sourceTree = "<group>"; };
+		8631B4892B08ADB7000AF03E /* AirpodsModelAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirpodsModelAPI.swift; sourceTree = "<group>"; };
+		8631B48C2B08AEB6000AF03E /* ExplainAirpods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplainAirpods.swift; sourceTree = "<group>"; };
+		8631B48E2B08CA5D000AF03E /* ExplainAirpods.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ExplainAirpods.storyboard; sourceTree = "<group>"; };
 		8643E07E2AF8B88B007E640A /* Descriptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Descriptions.swift; sourceTree = "<group>"; };
 		8643E0822AF8BAC1007E640A /* CategoryClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryClass.swift; sourceTree = "<group>"; };
 		864C66532ADA47D5004425D8 /* PythonApi */ = {isa = PBXFileReference; lastKnownFileType = folder; name = PythonApi; path = courseproject/PythonApi; sourceTree = "<group>"; };
@@ -83,6 +92,7 @@
 		86707DE82AFE3E8300BEE70D /* ExplainMac.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ExplainMac.storyboard; sourceTree = "<group>"; };
 		86707DEA2AFE3E8D00BEE70D /* ExplainMac.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplainMac.swift; sourceTree = "<group>"; };
 		8679BE012AE14AEA00B47233 /* UserDefaultsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsHelper.swift; sourceTree = "<group>"; };
+		8690D91E2B11CD1800AE6120 /* OrderList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderList.swift; sourceTree = "<group>"; };
 		869A1E132AF2CF83004A4A19 /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
 		869A1E152AF2CF9B004A4A19 /* CartCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartCell.swift; sourceTree = "<group>"; };
 		869A1E172AF2CFA8004A4A19 /* CartCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CartCell.xib; sourceTree = "<group>"; };
@@ -138,10 +148,28 @@
 		860E8FBB2AFA453700158A7F /* ExplainViews */ = {
 			isa = PBXGroup;
 			children = (
-				860E8FBD2AFA475C00158A7F /* Mac.storyboard */,
+				862642282B06A41E00FC474C /* ExplainViewMac */,
 				865905572AFA4B9E00D9E823 /* iPad.storyboard */,
 			);
 			path = ExplainViews;
+			sourceTree = "<group>";
+		};
+		862642282B06A41E00FC474C /* ExplainViewMac */ = {
+			isa = PBXGroup;
+			children = (
+				860E8FBD2AFA475C00158A7F /* Mac.storyboard */,
+				862642262B06A41A00FC474C /* Mac.swift */,
+			);
+			path = ExplainViewMac;
+			sourceTree = "<group>";
+		};
+		8631B48B2B08AEA7000AF03E /* ExplainAirpods */ = {
+			isa = PBXGroup;
+			children = (
+				8631B48C2B08AEB6000AF03E /* ExplainAirpods.swift */,
+				8631B48E2B08CA5D000AF03E /* ExplainAirpods.storyboard */,
+			);
+			path = ExplainAirpods;
 			sourceTree = "<group>";
 		};
 		863B48142AF21F98003A46F1 /* CategoriesCell */ = {
@@ -192,6 +220,7 @@
 		867F64A32AFCB626006C03AD /* ExplainObject */ = {
 			isa = PBXGroup;
 			children = (
+				8631B48B2B08AEA7000AF03E /* ExplainAirpods */,
 				86ACA4312AFF5311003AD03E /* Explain iPad */,
 				86707DE32AFE3AF500BEE70D /* Explain iPhone */,
 				86707DE12AFE3A5B00BEE70D /* Explain Mac */,
@@ -233,6 +262,7 @@
 				869AD1762AF60C4E00EB5E22 /* CategoryLengthModel.swift */,
 				86707DDF2AFE39CC00BEE70D /* iPhoneModelAPI.swift */,
 				86ACA4362B007EED003AD03E /* iPadModelAPI.swift */,
+				8631B4892B08ADB7000AF03E /* AirpodsModelAPI.swift */,
 			);
 			path = ParseModelsAPI;
 			sourceTree = "<group>";
@@ -280,6 +310,7 @@
 				8643E07E2AF8B88B007E640A /* Descriptions.swift */,
 				8643E0822AF8BAC1007E640A /* CategoryClass.swift */,
 				860B75E92B0528F7007520BE /* CartItem.swift */,
+				8690D91E2B11CD1800AE6120 /* OrderList.swift */,
 			);
 			path = "Structs & Classes";
 			sourceTree = "<group>";
@@ -513,6 +544,7 @@
 				86A8D5332AD3FDEA00765EC8 /* TabBarController.storyboard in Resources */,
 				86A8D52C2AD3EF9800765EC8 /* RegisterPage.storyboard in Resources */,
 				86A8D51B2AD3D6D000765EC8 /* LaunchScreen.storyboard in Resources */,
+				8631B48F2B08CA5D000AF03E /* ExplainAirpods.storyboard in Resources */,
 				869A1E182AF2CFA8004A4A19 /* CartCell.xib in Resources */,
 				865905582AFA4B9E00D9E823 /* iPad.storyboard in Resources */,
 				86EDE8D92AF4DE6F00C17B74 /* CategoryProductList.storyboard in Resources */,
@@ -540,18 +572,21 @@
 				86A8D52A2AD3EF8600765EC8 /* RegisterPage.swift in Sources */,
 				86FCC31D2AF3E12C00E98673 /* NotificationsSender.swift in Sources */,
 				86BF131B2AD906F400D60354 /* DataBaseHelper.swift in Sources */,
+				8631B48A2B08ADB7000AF03E /* AirpodsModelAPI.swift in Sources */,
 				86EDE8D42AF4DDF500C17B74 /* Router.swift in Sources */,
 				86AACE642AF2DAFB0056EDCB /* CartInfoLoader.swift in Sources */,
 				86707DE02AFE39CC00BEE70D /* iPhoneModelAPI.swift in Sources */,
 				86A8D5132AD3D6CE00765EC8 /* ViewController.swift in Sources */,
 				86DF90572ADE77D80022E5EA /* EditProfileInfo.swift in Sources */,
 				86B5EA3A2AE254DD00F503C4 /* DismissUpdateButton.swift in Sources */,
+				8690D91F2B11CD1800AE6120 /* OrderList.swift in Sources */,
 				86ACA4332AFF5320003AD03E /* ExplainiPad.swift in Sources */,
 				86A6E7872AF8E22300B4429C /* ProductCell.swift in Sources */,
 				86620E182ADD1A6100701677 /* Categories.swift in Sources */,
 				86EDE8D02AF4D8F600C17B74 /* CategoryType.swift in Sources */,
 				86A6E7822AF8C2EF00B4429C /* APIManager.swift in Sources */,
 				866788E92AD7BC830087C718 /* Profile.swift in Sources */,
+				8631B48D2B08AEB6000AF03E /* ExplainAirpods.swift in Sources */,
 				86A8D5312AD3FDE400765EC8 /* TabBarController.swift in Sources */,
 				869A1E142AF2CF83004A4A19 /* CartViewController.swift in Sources */,
 				869A1E162AF2CF9C004A4A19 /* CartCell.swift in Sources */,
@@ -563,6 +598,7 @@
 				86A8D52E2AD3F5DB00765EC8 /* AlertsCreator.swift in Sources */,
 				86707DEB2AFE3E8D00BEE70D /* ExplainMac.swift in Sources */,
 				86707DE52AFE3B0200BEE70D /* ExplainiPhone.swift in Sources */,
+				862642272B06A41A00FC474C /* Mac.swift in Sources */,
 				8643E0832AF8BAC1007E640A /* CategoryClass.swift in Sources */,
 				86FCC31F2AF42D2800E98673 /* EditCountDelegate.swift in Sources */,
 				8643E07F2AF8B88B007E640A /* Descriptions.swift in Sources */,

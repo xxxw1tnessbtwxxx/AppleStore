@@ -43,4 +43,12 @@ final class Router {
         fromvc.present(vc, animated: true)
     }
     
+    func pushProductInfo(from fromvc: UIViewController, product: AirpodsModelAPI) {
+        
+        let vc = UIStoryboard(name: "ExplainiPad", bundle: nil).instantiateViewController(withIdentifier: "ExplainiPad") as! ExplainAirpods
+        
+        vc.configure(with: product)
+        fromvc.present(vc, animated: true)
+    }
+    
 }

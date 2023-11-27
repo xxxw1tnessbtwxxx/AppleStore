@@ -42,4 +42,11 @@ class ProductCell: UICollectionViewCell {
         self.itemOfThisCell = item
     }
     
+    func configure(with item: AirpodsModelAPI) {
+        self.titleLabel.text = item.title
+        self.costLabel.text = "\(Int(item.price)) руб."
+        self.productImage.image = UIImage(named: item.image)
+        self.productID = item.id
+        self.itemOfThisCell = item
+    }
 }

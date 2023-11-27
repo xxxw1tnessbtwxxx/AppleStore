@@ -55,6 +55,34 @@ final class DataBaseHelper {
         
     }
     
+    
+    func getOrders(user: String) -> [OrderList] {
+        var list: [OrderList] = []
+        let id = try? db?.scalar("SELECT id FROM users WHERE login = '\(user)'")
+        let stmt = try? db!.prepare("SELECT orderItem, cost, count FROM orders WHERE clientID = '\(id!)'")
+        
+        for row in stmt! {
+            
+        }
+        
+        return list
+        
+    }
+    
+    /// Function for create order
+    func createOrder(for vc: UIViewController, _ user: String, data: String...) {
+        let id = try? db!.scalar("SELECT id FROM users WHERE login = '\(user)'")
+        
+        let query = "INSERT INTO orders VALUES ('\(id!)', '\(data[0])', '\(data[1])', '\(data[2])',"
+        do {
+            try db!.run(query)
+        }
+        catch {
+            print(error)
+        }
+        
+    }
+    
     func updateProfileInfo(set data: String...) -> Bool {
         let currentLogin = UserDefaults.standard.object(forKey: "currentLogin")!
         let query = "UPDATE users SET name = '\(data[0])', surname = '\(data[1])', livingAddress = '\(data[2])', postname = '\(data[3])' WHERE login = '\(currentLogin)'"

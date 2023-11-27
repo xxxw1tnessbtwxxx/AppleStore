@@ -30,7 +30,8 @@ class CategoryProductListVC: UIViewController, UICollectionViewDelegate, UIColle
         case .vision:
             break
         case .airpods:
-            break
+            let item = productData[indexPath.row]
+            cell.configure(with: item as! AirpodsModelAPI)
         case .tvhome:
             break
         case .accessories:
@@ -138,7 +139,13 @@ class CategoryProductListVC: UIViewController, UICollectionViewDelegate, UIColle
             case .vision:
                 break
             case .airpods:
-                break
+                AF.request("http://127.0.0.1:5000/products?category=\(self.loadCategory!.category)&id=\(id)").response { response in
+                    guard let data = response.data else { return }
+                    let product = try? JSONDecoder().decode(AirpodsModelAPI.self, from: data)
+                    print(product!.title)
+                    self.productData.append(product!)
+                    self.delegate?.iHaveEndLoadProducts()
+                }.resume()
             case .tvhome:
                 break
             case .accessories:

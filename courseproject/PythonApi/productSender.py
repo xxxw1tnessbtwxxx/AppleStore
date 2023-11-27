@@ -357,7 +357,7 @@ products = {
         },
         11: {
             "id": 11,
-            "title": "iPhone 13.jpeg",
+            "title": "iPhone 13",
             "price": 79990,
             "image": "iphone13",
             "specs": {
@@ -424,12 +424,63 @@ products = {
     "ipad": {
         0: {
             "id": 0,
-            "title": "iPad Pro 12,9",
+            "title": "iPad Air 2013",
             "price": 146800,
             "image": "ipad",
             "specs": {
-                "cpu": "A9X",
-                "memory": "64, 128, 256 GB",
+                "cpu": "Apple A7",
+                "memory": "16, 32, 64, 128 GB",
+                "display": "TN",
+                "screensize": "9.7 inch"
+            },
+            "other": {
+                "colors": COLORS_12,
+                "securitytechnology": "Face ID"
+            }
+        },
+
+        1: {
+            "id": 1,
+            "title": "iPad Mini 2",
+            "price": 146800,
+            "image": "ipad",
+            "specs": {
+                "cpu": "Apple A5",
+                "memory": "16, 32, 64, 128 GB",
+                "display": "TN",
+                "screensize": "7.9 inch"
+            },
+            "other": {
+                "colors": COLORS_12,
+                "securitytechnology": "Face ID"
+            }
+        },
+        
+        2: {
+            "id": 2,
+            "title": "iPad Air 2",
+            "price": 146800,
+            "image": "ipad",
+            "specs": {
+                "cpu": "Apple A8X",
+                "memory": "16, 32, 64, 128 GB",
+                "display": "TN",
+                "screensize": "9.7 inch"
+            },
+            "other": {
+                "colors": COLORS_12,
+                "securitytechnology": "Face ID"
+            }
+        },
+        
+        3: {
+            "id": 3,
+            "title": "iPad Mini 3",
+            "price": 146800,
+            "image": "ipad",
+            "specs": {
+                "cpu": "Apple A7X",
+                "memory": "16, 32, 64, 128 GB",
                 "display": "TN",
                 "screensize": "6.5 inch"
             },
@@ -438,6 +489,264 @@ products = {
                 "securitytechnology": "Face ID"
             }
         },
+
+        4: {
+            "id": 4,
+            "title": "iPad Pro 12,9",
+            "price": 146800,
+            "image": "ipad",
+            "specs": {
+                "cpu": "Apple A9X",
+                "memory": "32, 128, 256",
+                "display": "TN",
+                "screensize": "12.9 inch"
+            },
+            "other": {
+                "colors": COLORS_12,
+                "securitytechnology": "Face ID"
+            }
+        },
+
+         5: {
+            "id": 5,
+            "title": "iPad Mini 4",
+            "price": 146800,
+            "image": "ipad",
+            "specs": {
+                "cpu": "Apple A8",
+                "memory": "32, 128, 256",
+                "display": "TN",
+                "screensize": "7.9 inch"
+            },
+            "other": {
+                "colors": COLORS_12,
+                "securitytechnology": "Face ID"
+            }
+        },
+
+        6: {
+            "id": 6,
+            "title": "iPad Pro",
+            "price": 146800,
+            "image": "ipad",
+            "specs": {
+                "cpu": "Apple A9X",
+                "memory": "32, 128, 256",
+                "display": "TN",
+                "screensize": "9.7 inch"
+            },
+            "other": {
+                "colors": COLORS_12,
+                "securitytechnology": "Face ID"
+            }
+        },
+
+        7: {
+            "id": 7,
+            "title": "iPad 5 2017",
+            "price": 146800,
+            "image": "ipad",
+            "specs": {
+                "cpu": "Apple A9",
+                "memory": "32, 128, 256",
+                "display": "TN",
+                "screensize": "9.7 inch"
+            },
+            "other": {
+                "colors": COLORS_12,
+                "securitytechnology": "Face ID"
+            }
+        },
+
+        8: {
+            "id": 8,
+            "title": "iPad Pro 10,5 2017",
+            "price": 146800,
+            "image": "ipad",
+            "specs": {
+                "cpu": "Apple A9X",
+                "memory": "64, 256, 512",
+                "display": "TN",
+                "screensize": "10.5 inch"
+            },
+            "other": {
+                "colors": COLORS_12,
+                "securitytechnology": "Face ID"
+            }
+        },
+
+        9: {
+            "id": 9,
+            "title": "iPad 6 2018",
+            "price": 146800,
+            "image": "ipad",
+            "specs": {
+                "cpu": "Apple A10 Fusion",
+                "memory": "32, 128",
+                "display": "TN",
+                "screensize": "9.7 inch"
+            },
+            "other": {
+                "colors": COLORS_12,
+                "securitytechnology": "Face ID"
+            }
+        },
+        10: {
+            "id": 10,
+            "title": "iPad Pro 11",
+            "price": 146800,
+            "image": "ipad",
+            "specs": {
+                "cpu": "Apple A12x Bionic",
+                "memory": "64, 256, 512 GB, 1 TB",
+                "display": "TN",
+                "screensize": "11 inch"
+            },
+            "other": {
+                "colors": COLORS_12,
+                "securitytechnology": "Face ID"
+            }
+        },
+        
+    },
+    "airpods": {
+        0: {
+            "id": 0,
+            "title": "Airpods",
+            "image": "airpods.jpeg",
+            "price": 999,
+            "specs": {
+                "bluetooth": "4.2",
+                "isAppleTV": True,
+                "worktime": {
+                    "music": 5,
+                    "talking": 2
+                },
+                "reduction": True,
+                "system": {
+                    "iOS": "10.0 or newer",
+                    "watchOS": "3 or newer",
+                    "macOS": "High Sierra or newer"
+                }
+            }
+        },
+
+        1: {
+            "id": 1,
+            "title": "Airpods 2nd Gen",
+            "price": 999,
+            "image": "airpods2gen.jpeg",
+            "specs": {
+                "bluetooth": "5.0",
+                "isAppleTV": True,
+                "worktime": {
+                    "music": 5,
+                    "talking": 3
+                },
+                "reduction": True,
+                "system": {
+                    "iOS": "12.2 or newer",
+                    "watchOS": "5.2 or newer",
+                    "macOS": "macOS 10.14 or newer"
+                }
+            }
+        },
+
+        2: {
+            "id": 2,
+            "title": "Airpods Pro",
+            "price": 999,
+            "image": "airpodspro.jpeg",
+            "specs": {
+                "bluetooth": "5.0",
+                "isAppleTV": True,
+                "worktime": {
+                    "music": 5,
+                    "talking": 3
+                },
+                "reduction": True,
+                "system": {
+                    "iOS": "13.2 or newer",
+                    "watchOS": "6.1 or newer",
+                    "macOS": "Catalina  or newer"
+                }
+            }
+        },
+
+        3: {
+            "id": 3,
+            "title": "Airpods Pro 2nd Gen",
+            "price": 999,
+            "image": "airpodspro2ndgen.jpeg",
+            "specs": {
+                "bluetooth": "5.0",
+                "isAppleTV": True,
+                "worktime": {
+                    "music": 6,
+                    "talking": 4
+                },
+                "reduction": True,
+                "system": {
+                    "iOS": "13.2 or newer",
+                    "watchOS": "6.1 or newer",
+                    "macOS": "Catalina  or newer"
+                }
+            }
+        },
+
+        4: {
+            "id": 4,
+            "title": "Airpods 3",
+            "price": 999,
+            "image": "airpods3.jpeg",
+            "specs": {
+                "bluetooth": "5.0",
+                "isAppleTV": True,
+                "worktime": {
+                    "music": 5,
+                    "talking": 4
+                },
+                "reduction": True,
+                "system": {
+                    "iOS": "14.1 or newer",
+                    "watchOS": "6.5 or newer",
+                    "macOS": "Big Sur or newer"
+                }
+            }
+        },
+
+        5: {
+            "id": 5,
+            "title": "Airpods Max",
+            "price": 999,
+            "image": "airpodsmax.jpeg",
+            "specs": {
+                "bluetooth": "5.0",
+                "isAppleTV": True,
+                "worktime": {
+                    "music": 20,
+                    "talking": 20
+                },
+                "reduction": True,
+                "system": {
+                    "iOS": "15.0 or newer",
+                    "watchOS": "7.2 or newer",
+                    "macOS": "Monterey or newer"
+                }
+            }
+        }
+        
+    },
+
+    "watch": {
+        0: {
+            "id": 0,
+            "title": "Apple Watch Series 3",
+            "price": 999,
+            "specs": {
+            
+            }
+        }
     }
 
 }
