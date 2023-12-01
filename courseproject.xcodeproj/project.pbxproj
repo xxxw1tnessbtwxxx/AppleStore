@@ -21,6 +21,10 @@
 		8656533B2AE13406004B7E49 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8656533A2AE13406004B7E49 /* UserModel.swift */; };
 		865905582AFA4B9E00D9E823 /* iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 865905572AFA4B9E00D9E823 /* iPad.storyboard */; };
 		865AC17C2ADA558E00E5DE18 /* MacModelAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865AC17B2ADA558E00E5DE18 /* MacModelAPI.swift */; };
+		866078162B14984F003B5DAB /* Orders.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 866078152B14984F003B5DAB /* Orders.storyboard */; };
+		866078182B14985A003B5DAB /* Orders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 866078172B14985A003B5DAB /* Orders.swift */; };
+		8660781B2B149A17003B5DAB /* OrderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8660781A2B149A17003B5DAB /* OrderCell.xib */; };
+		8660781D2B149A20003B5DAB /* OrderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8660781C2B149A20003B5DAB /* OrderCell.swift */; };
 		86620E182ADD1A6100701677 /* Categories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86620E172ADD1A6100701677 /* Categories.swift */; };
 		866788E92AD7BC830087C718 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 866788E82AD7BC830087C718 /* Profile.swift */; };
 		866788F12AD7DB730087C718 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 866788F02AD7DB730087C718 /* Alamofire */; };
@@ -84,6 +88,10 @@
 		8656533A2AE13406004B7E49 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		865905572AFA4B9E00D9E823 /* iPad.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = iPad.storyboard; sourceTree = "<group>"; };
 		865AC17B2ADA558E00E5DE18 /* MacModelAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacModelAPI.swift; sourceTree = "<group>"; };
+		866078152B14984F003B5DAB /* Orders.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Orders.storyboard; sourceTree = "<group>"; };
+		866078172B14985A003B5DAB /* Orders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Orders.swift; sourceTree = "<group>"; };
+		8660781A2B149A17003B5DAB /* OrderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderCell.xib; sourceTree = "<group>"; };
+		8660781C2B149A20003B5DAB /* OrderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderCell.swift; sourceTree = "<group>"; };
 		86620E172ADD1A6100701677 /* Categories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Categories.swift; sourceTree = "<group>"; };
 		866788E82AD7BC830087C718 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		86707DDF2AFE39CC00BEE70D /* iPhoneModelAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iPhoneModelAPI.swift; sourceTree = "<group>"; };
@@ -179,6 +187,25 @@
 			path = CategoriesCell;
 			sourceTree = "<group>";
 		};
+		866078142B14983F003B5DAB /* Orders */ = {
+			isa = PBXGroup;
+			children = (
+				866078192B149A0A003B5DAB /* OrdersCell */,
+				866078152B14984F003B5DAB /* Orders.storyboard */,
+				866078172B14985A003B5DAB /* Orders.swift */,
+			);
+			path = Orders;
+			sourceTree = "<group>";
+		};
+		866078192B149A0A003B5DAB /* OrdersCell */ = {
+			isa = PBXGroup;
+			children = (
+				8660781A2B149A17003B5DAB /* OrderCell.xib */,
+				8660781C2B149A20003B5DAB /* OrderCell.swift */,
+			);
+			path = OrdersCell;
+			sourceTree = "<group>";
+		};
 		866788E72AD7BC700087C718 /* TabItems */ = {
 			isa = PBXGroup;
 			children = (
@@ -231,6 +258,7 @@
 		869A1E102AF2CCAD004A4A19 /* Cart */ = {
 			isa = PBXGroup;
 			children = (
+				866078142B14983F003B5DAB /* Orders */,
 				869A1E122AF2CCC3004A4A19 /* CartController */,
 				869A1E112AF2CCB4004A4A19 /* CartCell */,
 				860B75E72B0528CA007520BE /* Cart.swift */,
@@ -548,6 +576,8 @@
 				869A1E182AF2CFA8004A4A19 /* CartCell.xib in Resources */,
 				865905582AFA4B9E00D9E823 /* iPad.storyboard in Resources */,
 				86EDE8D92AF4DE6F00C17B74 /* CategoryProductList.storyboard in Resources */,
+				866078162B14984F003B5DAB /* Orders.storyboard in Resources */,
+				8660781B2B149A17003B5DAB /* OrderCell.xib in Resources */,
 				86A8D5182AD3D6D000765EC8 /* Assets.xcassets in Resources */,
 				86707DE72AFE3B3D00BEE70D /* ExplainiPhone.storyboard in Resources */,
 				86707DE92AFE3E8300BEE70D /* ExplainMac.storyboard in Resources */,
@@ -593,6 +623,7 @@
 				860B75E82B0528CA007520BE /* Cart.swift in Sources */,
 				86A8D50F2AD3D6CE00765EC8 /* AppDelegate.swift in Sources */,
 				8656533B2AE13406004B7E49 /* UserModel.swift in Sources */,
+				866078182B14985A003B5DAB /* Orders.swift in Sources */,
 				86A6CC1F2ADFAB6F00C02F06 /* Crypto.swift in Sources */,
 				8679BE022AE14AEA00B47233 /* UserDefaultsHelper.swift in Sources */,
 				86A8D52E2AD3F5DB00765EC8 /* AlertsCreator.swift in Sources */,
@@ -600,6 +631,7 @@
 				86707DE52AFE3B0200BEE70D /* ExplainiPhone.swift in Sources */,
 				862642272B06A41A00FC474C /* Mac.swift in Sources */,
 				8643E0832AF8BAC1007E640A /* CategoryClass.swift in Sources */,
+				8660781D2B149A20003B5DAB /* OrderCell.swift in Sources */,
 				86FCC31F2AF42D2800E98673 /* EditCountDelegate.swift in Sources */,
 				8643E07F2AF8B88B007E640A /* Descriptions.swift in Sources */,
 				86A6CC172ADEFD4500C02F06 /* ValidateErrors.swift in Sources */,

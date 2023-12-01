@@ -1,13 +1,12 @@
+import requests
 import asyncio
 
-async def printNumbers():
-    for i in range(1, 100):
-        print(i)
+async def get_data(url: str):
+    data = requests.get(url).json()
+    return data
 
 async def main():
-    asyncio.run(printNumbers())
-    for i in range(1, 100):
-        print("Hello World")
-
+   result = await get_data("https://catfact.ninja/fact")
+   print(result['fact'])
 
 asyncio.run(main())

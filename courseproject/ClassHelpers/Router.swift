@@ -45,10 +45,14 @@ final class Router {
     
     func pushProductInfo(from fromvc: UIViewController, product: AirpodsModelAPI) {
         
-        let vc = UIStoryboard(name: "ExplainiPad", bundle: nil).instantiateViewController(withIdentifier: "ExplainiPad") as! ExplainAirpods
-        
+        let vc = UIStoryboard(name: "ExplainAirpods", bundle: nil).instantiateViewController(withIdentifier: "ExplainAirpods") as! ExplainAirpods
         vc.configure(with: product)
         fromvc.present(vc, animated: true)
+    }
+    
+    func pushOrders(from fromvc: UIViewController) {
+        let vc = UIStoryboard(name: "Orders", bundle: nil).instantiateViewController(withIdentifier: "Orders") as! Orders
+        fromvc.navigationController?.pushViewController(vc, animated: true)
     }
     
 }

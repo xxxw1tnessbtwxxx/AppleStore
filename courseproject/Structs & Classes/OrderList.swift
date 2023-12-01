@@ -9,6 +9,6 @@ import Foundation
 
 struct OrderList {
     var title: String
-    var cost: Double
-    var count: Int
+    var cost: String
+    var count: String
 }

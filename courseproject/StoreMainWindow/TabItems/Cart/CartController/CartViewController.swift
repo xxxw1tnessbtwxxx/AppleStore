@@ -26,7 +26,13 @@ class CartViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     
     @IBAction func didTapMyOrderButton(_ sender: Any) {
-        print(DataBaseHelper.shared.getOrders(user: UserDefaultsHelper.shared.loadLogin()))
+        if (DataBaseHelper.shared.getOrders(for: self, user: UserDefaultsHelper.shared.loadLogin())?.count) == 0 {
+            AlertsCreator.MakePrimitiveAlert(vc: self, title: "Oops", message: "You dont have orders!", buttonTitle: "Thank you!")
+            return
+        }
+        
+        Router.shared.pushOrders(from: self)
+        
     }
     
     private func order() {

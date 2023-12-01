@@ -58,7 +58,7 @@ class CategoryProductListVC: UIViewController, UICollectionViewDelegate, UIColle
         case .vision:
             break
         case .airpods:
-            break
+            Router.shared.pushProductInfo(from: self, product: productData[indexPath.row] as! AirpodsModelAPI)
         case .tvhome:
             break
         case .accessories:

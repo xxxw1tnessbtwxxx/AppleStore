@@ -56,13 +56,13 @@ final class DataBaseHelper {
     }
     
     
-    func getOrders(user: String) -> [OrderList] {
+    func getOrders(for cart: UIViewController, user: String) -> [OrderList]? {
         var list: [OrderList] = []
         let id = try? db?.scalar("SELECT id FROM users WHERE login = '\(user)'")
         let stmt = try? db!.prepare("SELECT orderItem, cost, count FROM orders WHERE clientID = '\(id!)'")
         
         for row in stmt! {
-            
+            list.append(OrderList(title: "\(row[0]!)", cost: "\(row[1]!)", count: "\(row[2]!)"))
         }
         
         return list
@@ -73,7 +73,7 @@ final class DataBaseHelper {
     func createOrder(for vc: UIViewController, _ user: String, data: String...) {
         let id = try? db!.scalar("SELECT id FROM users WHERE login = '\(user)'")
         
-        let query = "INSERT INTO orders VALUES ('\(id!)', '\(data[0])', '\(data[1])', '\(data[2])',"
+        let query = "INSERT INTO orders VALUES ('\(id!)', '\(data[0])', '\(data[1])', '\(data[2])')"
         do {
             try db!.run(query)
         }
