@@ -55,4 +55,9 @@ final class Router {
         fromvc.navigationController?.pushViewController(vc, animated: true)
     }
     
+    func pushAuthorization(from fromvc: UIViewController) {
+        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MainPage") as! ViewController
+        fromvc.navigationController?.pushViewController(vc, animated: true)
+    }
+    
 }

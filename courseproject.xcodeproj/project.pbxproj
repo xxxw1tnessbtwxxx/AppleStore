@@ -35,6 +35,8 @@
 		86707DEB2AFE3E8D00BEE70D /* ExplainMac.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86707DEA2AFE3E8D00BEE70D /* ExplainMac.swift */; };
 		8679BE022AE14AEA00B47233 /* UserDefaultsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8679BE012AE14AEA00B47233 /* UserDefaultsHelper.swift */; };
 		8690D91F2B11CD1800AE6120 /* OrderList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8690D91E2B11CD1800AE6120 /* OrderList.swift */; };
+		869822CF2B1DCDF00015DB8D /* Start.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869822CE2B1DCDF00015DB8D /* Start.swift */; };
+		869822D12B1DCDF70015DB8D /* Start.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 869822D02B1DCDF70015DB8D /* Start.storyboard */; };
 		869A1E142AF2CF83004A4A19 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869A1E132AF2CF83004A4A19 /* CartViewController.swift */; };
 		869A1E162AF2CF9C004A4A19 /* CartCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869A1E152AF2CF9B004A4A19 /* CartCell.swift */; };
 		869A1E182AF2CFA8004A4A19 /* CartCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 869A1E172AF2CFA8004A4A19 /* CartCell.xib */; };
@@ -101,6 +103,8 @@
 		86707DEA2AFE3E8D00BEE70D /* ExplainMac.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplainMac.swift; sourceTree = "<group>"; };
 		8679BE012AE14AEA00B47233 /* UserDefaultsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsHelper.swift; sourceTree = "<group>"; };
 		8690D91E2B11CD1800AE6120 /* OrderList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderList.swift; sourceTree = "<group>"; };
+		869822CE2B1DCDF00015DB8D /* Start.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Start.swift; sourceTree = "<group>"; };
+		869822D02B1DCDF70015DB8D /* Start.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Start.storyboard; sourceTree = "<group>"; };
 		869A1E132AF2CF83004A4A19 /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
 		869A1E152AF2CF9B004A4A19 /* CartCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartCell.swift; sourceTree = "<group>"; };
 		869A1E172AF2CFA8004A4A19 /* CartCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CartCell.xib; sourceTree = "<group>"; };
@@ -255,6 +259,15 @@
 			path = ExplainObject;
 			sourceTree = "<group>";
 		};
+		869822CD2B1DCDDF0015DB8D /* Start Window */ = {
+			isa = PBXGroup;
+			children = (
+				869822CE2B1DCDF00015DB8D /* Start.swift */,
+				869822D02B1DCDF70015DB8D /* Start.storyboard */,
+			);
+			path = "Start Window";
+			sourceTree = "<group>";
+		};
 		869A1E102AF2CCAD004A4A19 /* Cart */ = {
 			isa = PBXGroup;
 			children = (
@@ -400,6 +413,7 @@
 		86A8D5232AD3DD3500765EC8 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				869822CD2B1DCDDF0015DB8D /* Start Window */,
 				86A8D5122AD3D6CE00765EC8 /* ViewController.swift */,
 				86A8D5142AD3D6CE00765EC8 /* Main.storyboard */,
 			);
@@ -583,6 +597,7 @@
 				86707DE92AFE3E8300BEE70D /* ExplainMac.storyboard in Resources */,
 				86DF905A2ADE78280022E5EA /* EditProfileInfoBoard.storyboard in Resources */,
 				860E8FBE2AFA475C00158A7F /* Mac.storyboard in Resources */,
+				869822D12B1DCDF70015DB8D /* Start.storyboard in Resources */,
 				860E8FBA2AFA409A00158A7F /* ProductCell.xib in Resources */,
 				86A8D5162AD3D6CE00765EC8 /* Main.storyboard in Resources */,
 				864C66542ADA47D6004425D8 /* PythonApi in Resources */,
@@ -604,6 +619,7 @@
 				86BF131B2AD906F400D60354 /* DataBaseHelper.swift in Sources */,
 				8631B48A2B08ADB7000AF03E /* AirpodsModelAPI.swift in Sources */,
 				86EDE8D42AF4DDF500C17B74 /* Router.swift in Sources */,
+				869822CF2B1DCDF00015DB8D /* Start.swift in Sources */,
 				86AACE642AF2DAFB0056EDCB /* CartInfoLoader.swift in Sources */,
 				86707DE02AFE39CC00BEE70D /* iPhoneModelAPI.swift in Sources */,
 				86A8D5132AD3D6CE00765EC8 /* ViewController.swift in Sources */,
