@@ -10,6 +10,8 @@ import UIKit
 import AVFoundation
 class CartViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, EditCountDelegate {
     
+    @IBOutlet weak var deleteGuide: UILabel!
+    @IBOutlet weak var cartTitleLabel: UILabel!
     var soundPlayer: AVAudioPlayer?
     
     func iHaveEditedCount() {
@@ -108,7 +110,30 @@ class CartViewController: UIViewController, UITableViewDataSource, UITableViewDe
 
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        self.cartTitleLabel.alpha = 0
+        self.deleteGuide.alpha = 0
+    }
+    
+    func changeGuideColor() {
+        UIView.animate(withDuration: 6) {
+            self.deleteGuide.textColor = .gray
+        }
+        self.deleteGuide.textColor = .gray
+    }
+    
     override func viewDidAppear(_ animated: Bool) {
+        
+        UIView.animate(withDuration: 3) {
+            self.cartTitleLabel.alpha = 1
+            self.deleteGuide.alpha = 1
+        } completion: { variable in
+            self.changeGuideColor()
+        }
+
+        
+        
+        
         super.viewDidAppear(animated)
         cartData = Cart.bucket.returnData()
         self.orderButton.setTitle("Order: \(Int(Cart.bucket.downloadTotalPrice()))", for: .normal)

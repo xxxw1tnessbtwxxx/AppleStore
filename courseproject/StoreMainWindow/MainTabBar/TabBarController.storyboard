@@ -174,6 +174,20 @@
                                     <action selector="didTapMyOrderButton:" destination="K0L-7G-QMz" eventType="touchUpInside" id="GCK-jf-NCl"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Here's your cart." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ShF-pt-uJR">
+                                <rect key="frame" x="81" y="91" width="232" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="For delete item just drag from right to left" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jri-l1-ke0">
+                                <rect key="frame" x="43" y="139" width="313" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="3iS-Y9-baR"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -181,6 +195,8 @@
                     <tabBarItem key="tabBarItem" title="Cart" image="cart" catalog="system" id="fGc-1Z-Z9X"/>
                     <connections>
                         <outlet property="cartTableView" destination="LBa-62-VQc" id="JfQ-8g-thA"/>
+                        <outlet property="cartTitleLabel" destination="ShF-pt-uJR" id="ury-b4-OXi"/>
+                        <outlet property="deleteGuide" destination="Jri-l1-ke0" id="8Tu-Uf-HHz"/>
                         <outlet property="orderButton" destination="qC0-T7-zeX" id="aPj-DZ-Gd6"/>
                     </connections>
                 </viewController>

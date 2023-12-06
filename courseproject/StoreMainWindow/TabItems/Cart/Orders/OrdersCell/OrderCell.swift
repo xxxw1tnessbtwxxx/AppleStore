@@ -18,8 +18,10 @@ class OrderCell: UITableViewCell {
     
     func configure(with item: OrderList) {
         self.titleLabel.text = item.title
-        self.costLabeel.text = "\(Int(item.cost)) руб."
+        self.costLabeel.text = "\(item.cost) руб."
+        print(self.costLabeel.text!)
         self.countLabel.text = item.count
+        print("from cell: \(item.cost)")
     }
     
 }

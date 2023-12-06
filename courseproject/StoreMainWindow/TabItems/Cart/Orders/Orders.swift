@@ -28,7 +28,6 @@ class Orders: UIViewController, UITableViewDataSource, UITableViewDelegate {
         self.data = DataBaseHelper.shared.getOrders(for: self, user: UserDefaultsHelper.shared.loadLogin())!
         self.tableView.dataSource = self
         self.tableView.delegate = self
-        
         let nib = UINib(nibName: "OrderCell", bundle: nil)
         self.tableView.register(nib, forCellReuseIdentifier: "OrderCell")
         

@@ -17,6 +17,7 @@ class Start: UIViewController {
     @IBOutlet weak var titleLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.signupButton.alpha = 0
         self.reservedLabel.alpha = 0
         self.applelogo.alpha = 0
         self.buttonStart.alpha = 0
@@ -26,6 +27,7 @@ class Start: UIViewController {
             self.buttonStart.alpha = 1
             self.titleLabel.alpha = 1
             self.signupButton.alpha = 1
+            
         }
         
         UIView.animate(withDuration: 4) {
