@@ -51,17 +51,15 @@ class RegisterPageVC: UIViewController {
         case .withoutEmail:
             
             DataBaseHelper.shared.registerUser(from: self, login: self.loginTextField.text!, password: CryptoLibrary.shared.hashPassword(password: self.passwordTextField.text!), email: nil)
-            self.dismiss(animated: true)
-            AlertsCreator.MakePrimitiveAlert(vc: self.presentingViewController!, title: "Registered!", message: "Now, you are member!\nNow you need to login.", buttonTitle: "Thank you!")
-            UserDefaults.standard.setValue(self.loginTextField.text!, forKey: "currentLogin")
+            	
+            Router.shared.pushTabBar(from: self, setlogin: self.loginTextField.text!)
             break
             
         case .withEmail:
             
             DataBaseHelper.shared.registerUser(from: self, login: self.loginTextField.text!, password: CryptoLibrary.shared.hashPassword(password: self.passwordTextField.text!), email: self.emailTextField.text!)
             self.dismiss(animated: true)
-            AlertsCreator.MakePrimitiveAlert(vc: self.presentingViewController!, title: "Registered!", message: "Now, you are member!\nNow you need to login.", buttonTitle: "Thank you!")
-            UserDefaults.standard.setValue(self.loginTextField.text!, forKey: "currentLogin")
+            Router.shared.pushTabBar(from: self, setlogin: self.loginTextField.text!)
             break
             
         case .none:

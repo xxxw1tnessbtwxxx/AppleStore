@@ -3,7 +3,6 @@
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
-        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -55,21 +54,6 @@
                                     <action selector="didLoginTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oxQ-GA-1wI"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You are not registered?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wwJ-8U-ShN">
-                                <rect key="frame" x="85" y="705" width="222" height="26.333333333333371"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ex0-WE-ANu">
-                                <rect key="frame" x="149" y="775" width="95" height="34.333333333333371"/>
-                                <color key="tintColor" name="AccentColor"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Sign up"/>
-                                <connections>
-                                    <action selector="didRegisterTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TwV-7E-fhV"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9FU-NP-6zl">
                                 <rect key="frame" x="307" y="445" width="57.666666666666686" height="34"/>
                                 <state key="normal" title="Button"/>
@@ -87,7 +71,6 @@
                             <constraint firstItem="s1b-bf-Nsl" firstAttribute="top" secondItem="dvJ-Ge-tMO" secondAttribute="bottom" constant="20" id="24J-o5-KaH"/>
                             <constraint firstItem="gxk-6b-MKN" firstAttribute="top" secondItem="0u5-qj-8Dz" secondAttribute="bottom" constant="24" id="4mk-Iw-RkJ"/>
                             <constraint firstItem="0u5-qj-8Dz" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="43" id="53S-GP-3Sf"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wwJ-8U-ShN" secondAttribute="trailing" constant="86" id="9TE-ta-vSo"/>
                             <constraint firstItem="s1b-bf-Nsl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="94" id="Cef-VB-TEn"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="l25-qI-gSs" secondAttribute="trailing" constant="106" id="FnK-pu-4ck"/>
                             <constraint firstItem="dvJ-Ge-tMO" firstAttribute="top" secondItem="0u5-qj-8Dz" secondAttribute="bottom" constant="145" id="ITF-0z-Gq3"/>
@@ -96,20 +79,15 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gxk-6b-MKN" secondAttribute="trailing" constant="122" id="R2M-YK-En7"/>
                             <constraint firstItem="dvJ-Ge-tMO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="94" id="U73-c7-10A"/>
                             <constraint firstItem="l25-qI-gSs" firstAttribute="top" secondItem="gxk-6b-MKN" secondAttribute="bottom" constant="8" symbolic="YES" id="YuC-Mv-Fdt"/>
-                            <constraint firstItem="wwJ-8U-ShN" firstAttribute="top" secondItem="1NW-1Q-YoS" secondAttribute="bottom" constant="159" id="aD8-Ru-jfs"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="s1b-bf-Nsl" secondAttribute="trailing" constant="94" id="abx-E2-w1L"/>
-                            <constraint firstItem="ex0-WE-ANu" firstAttribute="top" secondItem="1NW-1Q-YoS" secondAttribute="bottom" constant="229" id="bfb-hY-cQj"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9FU-NP-6zl" secondAttribute="trailing" constant="28.329999999999998" id="cJW-zC-ZQQ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1NW-1Q-YoS" secondAttribute="trailing" constant="127" id="fGa-l3-b6f"/>
                             <constraint firstItem="1NW-1Q-YoS" firstAttribute="top" secondItem="s1b-bf-Nsl" secondAttribute="bottom" constant="32" id="gTn-aE-5kS"/>
                             <constraint firstItem="0u5-qj-8Dz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="76" id="hal-dc-5Eg"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dvJ-Ge-tMO" secondAttribute="trailing" constant="94" id="jCa-0y-KJu"/>
-                            <constraint firstItem="ex0-WE-ANu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="149" id="l5J-wI-3th"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0u5-qj-8Dz" secondAttribute="trailing" constant="77" id="mN1-xB-Bz3"/>
                             <constraint firstItem="l25-qI-gSs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="106" id="mbl-UA-L1T"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ex0-WE-ANu" secondAttribute="trailing" constant="149" id="nph-ps-vef"/>
                             <constraint firstItem="gxk-6b-MKN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="122" id="pKo-ho-1LZ"/>
-                            <constraint firstItem="wwJ-8U-ShN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="85" id="tWV-nh-I61"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="wAU-wB-QEv"/>
@@ -145,9 +123,6 @@
     <resources>
         <image name="applelogo" catalog="system" width="105" height="128"/>
         <image name="eye.slash" catalog="system" width="128" height="95"/>
-        <namedColor name="AccentColor">
-            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
         <systemColor name="placeholderTextColor">
             <color red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.29803921570000003" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

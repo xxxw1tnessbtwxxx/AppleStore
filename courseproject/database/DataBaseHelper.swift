@@ -44,6 +44,7 @@ final class DataBaseHelper {
         let login = UserDefaultsHelper.shared.loadLogin()
         var user = User(name: "Did not setted", surname: "Did not setted", livingAddress: "Did not setted", postname: "Did not setted")
         let name = try? db?.scalar("SELECT name FROM users WHERE login = '\(login)'")
+        print(UserDefaultsHelper.shared.loadLogin())
         let surname = try? db?.scalar("SELECT surname FROM users WHERE login = '\(login)'")
         let livingAddress = try? db?.scalar("SELECT livingAddress FROM users WHERE login = '\(login)'")
         let postname = try? db?.scalar("SELECT postname FROM users WHERE login = '\(login)'")

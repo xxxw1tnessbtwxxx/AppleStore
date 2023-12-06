@@ -41,12 +41,11 @@ class ViewController: UIViewController {
     @IBAction func didLoginTap(_ sender: Any) {
         if (DataBaseHelper.shared.isLoginExists(login: self.loginTextField.text!)) {
             if (CryptoLibrary.shared.hashPassword(password: self.passwordTextField.text!) == DataBaseHelper.shared.getPasswordByLogin(loginForCheck: self.loginTextField.text!)) {
-                let story = UIStoryboard(name: "TabBarController", bundle: nil)
-                let vc = story.instantiateViewController(withIdentifier: "TabBarController") as! TabBarController
-                UserDefaults.standard.setValue(self.loginTextField.text!, forKey: "currentLogin")
+                
+                Router.shared.pushTabBar(from: self, setlogin: self.loginTextField.text!)
+                
                 self.loginTextField.text = ""
                 self.passwordTextField.text = ""
-                self.navigationController?.pushViewController(vc, animated: true)
             }
             else {
                 AlertsCreator.MakePrimitiveAlert(vc: self, title: "Error", message: "Wrong password", buttonTitle: "Retry")

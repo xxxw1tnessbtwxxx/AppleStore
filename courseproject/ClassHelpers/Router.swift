@@ -60,4 +60,16 @@ final class Router {
         fromvc.navigationController?.pushViewController(vc, animated: true)
     }
     
+    func pushRegistration(from fromvc: UIViewController) {
+        let vc = UIStoryboard(name: "RegisterPage", bundle: nil).instantiateViewController(withIdentifier: "RegisterPage") as! RegisterPageVC
+        fromvc.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    func pushTabBar(from fromvc: UIViewController, setlogin: String) {
+        let story = UIStoryboard(name: "TabBarController", bundle: nil)
+        let vc = story.instantiateViewController(withIdentifier: "TabBarController") as! TabBarController
+        UserDefaults.standard.setValue(setlogin, forKey: "currentLogin")
+        fromvc.navigationController?.pushViewController(vc, animated: true)
+    }
+    
 }

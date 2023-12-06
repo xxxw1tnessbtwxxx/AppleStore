@@ -10,6 +10,7 @@ import UIKit
 
 class Start: UIViewController {
     
+    @IBOutlet weak var signupButton: UIButton!
     @IBOutlet weak var reservedLabel: UILabel!
     @IBOutlet weak var applelogo: UIImageView!
     @IBOutlet weak var buttonStart: UIButton!
@@ -24,6 +25,7 @@ class Start: UIViewController {
         UIView.animate(withDuration: 3) {
             self.buttonStart.alpha = 1
             self.titleLabel.alpha = 1
+            self.signupButton.alpha = 1
         }
         
         UIView.animate(withDuration: 4) {
@@ -40,6 +42,9 @@ class Start: UIViewController {
         
     @IBAction func didTapContinueButton(_ sender: Any) {
         Router.shared.pushAuthorization(from: self)
+    }
+    @IBAction func didTapSignButton(_ sender: Any) {
+        Router.shared.pushRegistration(from: self)
     }
 }
     

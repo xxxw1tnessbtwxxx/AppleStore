@@ -40,7 +40,7 @@ class Profile: UIViewController, DismissDelegate {
     
     
     @IBAction func didTapLogoutButton(_ sender: Any) {
-        self.navigationController?.popViewController(animated: false)
+        self.navigationController?.popToRootViewController(animated: true)
         let keys = UserDefaults.standard.dictionaryRepresentation().keys
         keys.forEach { keys in
             UserDefaults.standard.removeObject(forKey: keys)
