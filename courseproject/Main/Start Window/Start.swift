@@ -12,6 +12,7 @@ class Start: UIViewController {
     
     @IBOutlet weak var signupButton: UIButton!
     @IBOutlet weak var reservedLabel: UILabel!
+    @IBOutlet weak var linkbutton: UIButton!
     @IBOutlet weak var applelogo: UIImageView!
     @IBOutlet weak var buttonStart: UIButton!
     @IBOutlet weak var titleLabel: UILabel!
@@ -22,11 +23,13 @@ class Start: UIViewController {
         self.applelogo.alpha = 0
         self.buttonStart.alpha = 0
         self.titleLabel.alpha = 0
+        self.linkbutton.alpha = 0
         
         UIView.animate(withDuration: 3) {
             self.buttonStart.alpha = 1
             self.titleLabel.alpha = 1
             self.signupButton.alpha = 1
+            self.linkbutton.alpha = 1
             
         }
         
@@ -47,6 +50,11 @@ class Start: UIViewController {
     }
     @IBAction func didTapSignButton(_ sender: Any) {
         Router.shared.pushRegistration(from: self)
+    }
+    @IBAction func didTapLinkButton(_ sender: Any) {
+        let websiteURL = URL(string: "https://www.apple.com")!
+
+        UIApplication.shared.open(websiteURL)
     }
 }
     

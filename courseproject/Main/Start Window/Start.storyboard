@@ -55,6 +55,15 @@
                                     <action selector="didTapSignButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="y1s-u2-B0c"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RDg-QM-rhb">
+                                <rect key="frame" x="116" y="526" width="167" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Link Apple website"/>
+                                <connections>
+                                    <action selector="didTapLinkButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="UC7-b7-tKS"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="viewFlipsideBackgroundColor"/>
@@ -63,6 +72,7 @@
                     <connections>
                         <outlet property="applelogo" destination="EGh-E1-yR2" id="Xed-70-geI"/>
                         <outlet property="buttonStart" destination="GKj-09-4Hc" id="Nj3-Ga-wGS"/>
+                        <outlet property="linkbutton" destination="RDg-QM-rhb" id="U2r-M8-HcS"/>
                         <outlet property="reservedLabel" destination="Ocv-it-noX" id="ZfW-Z2-QDw"/>
                         <outlet property="signupButton" destination="hSf-XP-9gf" id="Nfj-4v-wgy"/>
                         <outlet property="titleLabel" destination="8se-dZ-mtv" id="Ncm-bN-g3P"/>
@@ -94,7 +104,7 @@
     <resources>
         <image name="applelogo" catalog="system" width="105" height="128"/>
         <systemColor name="secondaryLabelColor">
-            <color red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="viewFlipsideBackgroundColor">
             <color red="0.12156862745098039" green="0.12941176470588237" blue="0.14117647058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

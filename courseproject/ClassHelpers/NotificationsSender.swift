@@ -8,11 +8,4 @@
 import Foundation
 import UserNotifications
 
-class NotificationsSender {
-    
-    static func sendNotification(title: String, message: String) {
-        
-       
-    }
-    
-}
+
