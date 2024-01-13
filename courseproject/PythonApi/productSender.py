@@ -761,7 +761,7 @@ def returnLength():
     return jsonify(data)
     
 
-@app.route('/products/returnall',)
+@app.route('/products/returnall')
 def returnAll():
     return jsonify(products[f"{request.args.get('category')}"])
 
